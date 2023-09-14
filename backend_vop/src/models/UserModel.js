@@ -1,0 +1,1 @@
+// dans modèle en général  les données qu'on va mettre dans la base de donnée.
