@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Header*/
+.header {
+  background: url(https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+/*navbar*/
+.navbar {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: row;
+  background-color: #cdcbcb47;
+  box-shadow: -3px 2px 1px #80808082;
+}
+
+.onglets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.onglets a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  font-family: 'Chilanka',cursive;
+  font-size: larger;
+}
+
+.onglets a:hover {
+ color: #DF921E;
+}
+
+.onglets_icon {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.onglets_icon svg {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon_auth a {
+  color: black;
 }
+
+
+/**/
