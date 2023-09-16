@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Main from './components/Main';
 import React from 'react';
 import Footer from '../../componentsG/Footer';
 import '../../App.css';
@@ -7,6 +8,7 @@ export default function Accueil() {
        
         <>
      <Header/>
+     <Main/>
      <Footer/>
      
 

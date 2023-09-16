@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chilanka&family=Inter:wght@300&display=swap');
+
+
+
+.main_accueil h2 {
+    font-size: 4em;
+    font-family: 'Chilanka',cursive;
+    font-weight: 400;
+    text-align: center;
+    height: 150px;
+}
+.destination , .slide , .team,.temoignage {
+    display: flex;
+    flex-direction: column;
+    height: 960px;
+}
+
+/*section : destination */
+.destination{
+    background: url(../../media/img/fd_destination.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.destination_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card img {
+        width: 360px;
+        height: 420px;
+        border-radius: 22px;
+        box-shadow: 1px 2px 5px grey;
+    }
+
+
+/*section : slide */
+.slide img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/*section : team */
+
+.card_team{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card_team img {
+    width: 420px;
+    height: 420px;
+    border-radius: 100%;
+}
+
+.card_team_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chilanka',cursive;
+}
+
+/*section : temoignage */
+.temoignage{
+    background: url(../../media/img/fd_temoignage.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.temoignage h2 {
+color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Cherry Bomb One;
+font-size: 4em;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.card_temoignage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff8c;
+    max-width: 950px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    box-shadow: 1px 2px 8px #808080ad;
+  
+}
+
+.card_temoignage p {
+    font-family: 'Chilanka',cursive;
+    font-size: xx-large;
+}
+
+.card_temoignage_footer {
+    align-self: flex-end;
+    margin-right: 120px;
+}

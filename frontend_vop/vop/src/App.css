@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chilanka&family=Inter:wght@300&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -8,13 +7,12 @@ body {
 
 /*Header*/
 .header {
-  background: url(https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1600);
-  position: fixed;
+  background: url('media/img/fd_accueil.jpg');
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index:-1;
+  height: 960px;
+  z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -22,6 +20,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+
 
 /*navbar*/
 .navbar {
