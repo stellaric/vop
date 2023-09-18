@@ -1,7 +1,165 @@
-body{
-  margin:0;
-  padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chilanka&family=Inter:wght@300&display=swap');
+body {
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
-/*ceci est un test app.css*/
+/*Header*/
+.header {
+  background: url('media/img/fd-1.jpg');
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 960px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+/*navbar*/
+.navbar {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #cdcbcb47;
+  box-shadow: -3px 2px 1px #80808082;
+}
+
+.onglets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.onglets a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  font-family: 'Chilanka', cursive;
+  font-size: larger;
+}
+
+.onglets a:hover {
+  color: #DF921E;
+}
+
+.onglets_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.onglets_icon svg {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.icon_auth a {
+  color: black;
+}
+
+
+/**/
+
+
+
+.footer {
+  background-color: rgba(248, 200, 128, 0.85);
+  width: 100%;
+  height: 350px;
+}
+
+.button_contact {
+  width: 200px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.50);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  align-self: center;
+  color: #FF8D69;
+}
+
+.button_contact a {
+  text-align: center;
+  text-decoration: none;
+  text-underline-offset: none;
+  color: #FF8D69;
+}
+
+.element_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  color: white;
+}
+
+
+.elem2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+.elem3 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+.elem1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.elem2 svg+svg,
+.elem1 svg+svg {
+  margin-left: 20px;
+}
+
+
+.elem3 img {
+  max-width: 150px;
+  width: 100%;
+  align-self: center;
+}
+
+
+.elem3 input {
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+  width: auto;
+}
+
+.button_news {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #FF8D69;
+  color: white;
+  height: 25px;
+  width: 120px;
+  align-self: center;
+}
+
