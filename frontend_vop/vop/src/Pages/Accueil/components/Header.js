@@ -1,4 +1,4 @@
-import logo from "../../../media/img/logo_navbar.png";
+import logo from "../../../media/img/logo_vop.png";
 import { Link } from "react-router-dom";
 import React , { useState } from "react";
 import "../../../App.css";
