@@ -1,6 +1,6 @@
 import Navbar from '../../../componentsG/Navbar'
 import React  from "react";
-import "../../../App.css";
+import "../Accueil.css";
 
 export default function Header() {
 

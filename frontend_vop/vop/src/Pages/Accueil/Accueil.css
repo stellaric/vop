@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chilanka&family=Inter:wght@300&display=swap');
 
 
+/*Header*/
+.header {
+    background: url('../../media/img/fd-1.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 960px;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
+  
 .main_accueil h2 {
     font-size: 4em;
     font-family: 'Chilanka',cursive;
@@ -30,7 +46,7 @@
 
 .card img {
         width: 360px;
-        height: 420px;
+        height: 460px;
         border-radius: 22px;
         box-shadow: 1px 2px 5px grey;
     }
@@ -53,6 +69,14 @@ li.dot {
     padding: 10px;
 }
 /*section : team */
+.team{
+    background: url(../../media/img/fd_destination.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
 
 .card_team{
     display: flex;
