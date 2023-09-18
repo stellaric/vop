@@ -7,7 +7,10 @@ import imgDest1 from "../../../media/img/img_dest_1.jpg";
 import imgDest2 from "../../../media/img/img_dest_2.jpg";
 import imgDest3 from "../../../media/img/img_dest_3.jpg";
 import jade from "../../../media/img/jade.jpg"
+import martinaise from "../../../media/img/martinaise.jpg"
 import stella from "../../../media/img/stella.jpg"
+
+
 export default function Main() {
 
   
@@ -58,17 +61,17 @@ export default function Main() {
         <h2>Notre Team </h2>
         <div className="card_team">
           <div className="card_team_content">
-            <img src={jade} alt="img_test" />
+            <img src={jade} alt="img_jade" />
             <h3>Jade</h3>
             <p>ceici est un texte</p>
           </div>
           <div className="card_team_content">
-            <img src={test} alt="img_test" />
+            <img src={martinaise} alt="img_martinaise" />
             <h3>Martinaise</h3>
             <p>ceici est un texte</p>
           </div>
           <div className="card_team_content">
-            <img src={stella} alt="img_test" />
+            <img src={stella} alt="img_stella" />
             <h3>Stella</h3>
             <p>ceici est un texte</p>
           </div>
