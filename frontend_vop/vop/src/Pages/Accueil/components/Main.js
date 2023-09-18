@@ -9,6 +9,8 @@ import imgDest3 from "../../../media/img/img_dest_3.jpg";
 
 
 export default function Main() {
+
+  
   return (
     <main className="main_accueil">
       {/*section : destination populaire */}
@@ -18,27 +20,33 @@ export default function Main() {
         <div className="destination_card">
           <div className="card">
             <img src={imgDest1} alt="img_test" />
+            <h4>Lisbonne</h4>
+            <p>Description</p>
           </div>
 
           <div className="card">
             <img src={imgDest2}  alt="img_test" />
+            <h4>Lisbonne</h4>
+            <p>Description</p>
           </div>
 
           <div className="card">
             <img src={imgDest3}  alt="img_test" />
+            <h4>Lisbonne</h4>
+            <p>Description</p>
           </div>
         </div>
       </section>
       {/*section : slide */}
       <section className="slide">
       <Carousel>
-        <div>
+        <div className="slide_img">
           <img src={test} alt="Image 1" />
         </div>
-        <div>
+        <div className="slide_img">
           <img src={imgDest1} alt="Image 2" />
         </div>
-        <div>
+        <div className="slide_img">
           <img src={imgDest2} alt="Image 2" />
         </div>
        

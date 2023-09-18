@@ -42,6 +42,16 @@
     object-position: center;
 }
 
+.carousel .thumbs-wrapper {
+    display: none;
+}
+
+.carousel .carousel-status {
+    visibility: hidden;
+}
+li.dot {
+    padding: 10px;
+}
 /*section : team */
 
 .card_team{
