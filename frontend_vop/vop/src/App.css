@@ -45,12 +45,12 @@ body {
   text-decoration: none;
   padding: 20px;
   color: black;
-  font-family: 'Chilanka',cursive;
+  font-family: 'Chilanka', cursive;
   font-size: larger;
 }
 
 .onglets a:hover {
- color: #DF921E;
+  color: #DF921E;
 }
 
 .onglets_icon {
@@ -72,7 +72,7 @@ body {
 
 
 /**/
-/*ceci est un test app.css*/
+
 
 
 .footer {
@@ -92,6 +92,13 @@ body {
   color: #FF8D69;
 }
 
+.button_contact a {
+  text-align: center;
+  text-decoration: none;
+  text-underline-offset: none;
+  color: #FF8D69;
+}
+
 .element_footer {
   display: flex;
   flex-direction: row;
@@ -101,32 +108,48 @@ body {
 }
 
 
-.elem2,
-.elem3 {
+.elem2 {
   text-align: center;
-  /* align-items: center; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.elem1{
+
+
+.elem3 {
+  text-align: center;
   display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+.elem1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .elem2 svg+svg,
-.elem1 svg+ svg {
+.elem1 svg+svg {
   margin-left: 20px;
 }
 
+
+.elem3 img {
+  max-width: 150px;
+  width: 100%;
+  align-self: center;
+}
 
 
 .elem3 input {
   border-radius: 20px;
   border: none;
   height: 30px;
+  width: auto;
 }
 
 .button_news {
@@ -139,3 +162,4 @@ body {
   width: 120px;
   align-self: center;
 }
+

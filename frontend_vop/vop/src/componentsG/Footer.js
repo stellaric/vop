@@ -2,6 +2,7 @@ import '../App.css';
 import { Icon } from '@iconify/react';
 import QRcode from '../media/images/QRcode.png';
 import logo from '../media/images/logo.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Footer() {
@@ -27,9 +28,9 @@ export default function Footer() {
                         <Icon icon="uit:twitter-alt" color="white" width="60" height="60" />
                     </div>
                     <p>ou</p>
-                    <button className='button_contact'>
-                        <p>Nous contacter</p>
-                    </button>
+                    <form className='button_contact'> <Link to={"/contact"}> Nous contacter</Link></form>
+                   
+                    
                 </div>
                 <div className='elem3'>
                     <p>Newsletter</p>
