@@ -1,15 +1,15 @@
-import logo from "../../../media/img/logo_vop.png";
+import logo from "../media/img/logo_vop.png";
 import { Link } from "react-router-dom";
 import React  from "react";
-import "../../../App.css";
+import "../App.css";
 
 export default function Header() {
 
  
   return (
-    <div className="navbar">
+    <>
       {/*navbar*/}
-    <nav>
+    <nav className="navbar">
 
         <div className="logo">
           <Link to={"/"}>
@@ -43,6 +43,6 @@ export default function Header() {
         </div>
       </nav>
 
-</div>
+</>
   );
 }
