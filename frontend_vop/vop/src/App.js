@@ -6,6 +6,7 @@ import Destination from'./Pages/Destination/Destination'
 import Activite from'./Pages/Activity/Activity'
 import Authentification from'./Pages/Authentification/Auth'
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
+import Contact from './Pages/Contact/Contact';
 import './App.css';
 
 
@@ -22,6 +23,8 @@ function App() {
           <Route path="/activite" element={<Activite />} />
           <Route path="/authentification" element={<Authentification />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/contact" element={<Contact />} />
+
         </Routes>
       </Router>
 
