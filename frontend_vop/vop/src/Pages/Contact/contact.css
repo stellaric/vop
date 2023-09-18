@@ -136,12 +136,20 @@ textarea {
 .content_adresse {
     display: flex;
     justify-content: space-between; 
+    height: 100%;
   }
 
-  .section.map,
+  .section_map,
   .coordonnée {
     flex: 1; /* Les deux divs occupent une largeur égale */
     padding: 20px; 
    
   }
   
+  .section_map img {
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 220px;
+  }

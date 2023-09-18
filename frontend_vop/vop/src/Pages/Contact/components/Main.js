@@ -1,4 +1,5 @@
 import "../../Contact/contact.css"
+import map from "../../../media/images/map.png";
 import React, { useState } from "react";
 
 export default function Main() {
@@ -32,7 +33,9 @@ export default function Main() {
 
             <container className="adresse">
                 <div className="content_adresse">
-                    <div className="section map"></div>
+                    <div className="section_map">
+                    <img src={map} alt="Map" />
+                    </div>
                     <div className="coordonnée">
                         <h2>Nos coordonnées</h2>
                         <p>ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz </p>
