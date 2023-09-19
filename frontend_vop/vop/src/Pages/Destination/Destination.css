@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+.header_destination {
+    background: url('../../media/images/destination.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 960px;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header_destination p {
+    font-family: 'Fasthand', cursive;
+    text-align: center;
+    font-size: 120px;
+    margin-bottom: -135px;
+    color: #FFF;
+  }
+/*---------MAIN------*/
+  .mainTab h3{
+  color: black;
+  font-family: Chilanka;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 50px;
+  text-align: center;
+}
+
+div#All {
+  display: none;
+}
+
+
+  div#All {
+  display: none;
+}
+
+.mainTab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+  display: flex;
+  flex-direction:row;
+  width: 44%;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #df921e;
+}
+
+.tab button {
+  background-color: inherit;
+  font-size: 20px;
+  font-family: Chilanka;
+  width: 379px;
+  color: #FFF;
+  padding: 22px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: rgba(223, 146, 30, 0.62);
+  border-radius: 20px;
+  /*box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);*/
+}
+
+.tab button:hover {
+  background-color: #3f2908;;
+}
+
+.tab button.active {
+ 
+}
+
+.tabcontent-container {
+  display: flex;
+  flex-direction: column;
+  border-left: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+.tabcontent {
+  display: none;
+  padding: 0px 12px;
+  width: 100%;
+  border-left: none;
+}
+
+.tabcontent.active {
+  display: block;
+  height: 750px;
+}
+
+
+/*____section_____*/
+
+.card  {
+  width: 360px;
+  height: 482px;
+  
+  border-radius: 22px;
+  box-shadow: 1px 2px 5px grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_img {
+  height: 50%;
+  background-color: transparent;
+}
+
+.card img {
+  width: 360px;
+  border-radius: 20px 20px 0 0;
+  
+}
+
+.card_content {
+  height: 50%;
+  background-color: rgb(235, 233, 233);
+  border-radius: 0 0 20px 20px;
+}
+.europe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+}
