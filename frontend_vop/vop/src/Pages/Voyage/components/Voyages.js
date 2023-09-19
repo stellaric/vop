@@ -1,1 +1,0 @@
-//page détaillant le voyage --> voir Figma "page voyage détaillé"

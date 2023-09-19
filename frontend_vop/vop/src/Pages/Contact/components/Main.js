@@ -1,11 +1,22 @@
 import "../../Contact/contact.css"
+import map from "../../../media/images/map.png";
 import React, { useState } from "react";
 
 export default function Main() {
     return (
         <div className="main">
 
+            <div className="contact_content">
+            <div className="titre">
+                <h1>Nous contacter</h1>
+            </div>
+
+
+          
             <div className="section_contact">
+           
+            
+
                 <form name="contact" method="post" className="contact_form" onSubmit="submit">
                     <input type="hidden" name="form-name" value="contact" />
 
@@ -25,14 +36,16 @@ export default function Main() {
 
                 </form>
             </div>
-
+            </div>
 
 
 
 
             <container className="adresse">
                 <div className="content_adresse">
-                    <div className="section map"></div>
+                    <div className="section_map">
+                    <img src={map} alt="Map" />
+                    </div>
                     <div className="coordonnée">
                         <h2>Nos coordonnées</h2>
                         <p>ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz </p>

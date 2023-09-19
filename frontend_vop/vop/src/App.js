@@ -7,6 +7,7 @@ import Activite from'./Pages/Activity/Activity'
 import Authentification from'./Pages/Authentification/Auth'
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import Contact from './Pages/Contact/Contact';
+import Voyage from './Pages/Voyage/Voyages';
 import './App.css';
 
 
@@ -24,6 +25,8 @@ function App() {
           <Route path="/authentification" element={<Authentification />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/voyage" element={<Voyage />} />
+          
 
           </Routes>
         </Router>
