@@ -6,7 +6,17 @@ export default function Main() {
     return (
         <div className="main">
 
+            <div className="contact_content">
+            <div className="titre">
+                <h1>Nous contacter</h1>
+            </div>
+
+
+          
             <div className="section_contact">
+           
+            
+
                 <form name="contact" method="post" className="contact_form" onSubmit="submit">
                     <input type="hidden" name="form-name" value="contact" />
 
@@ -26,7 +36,7 @@ export default function Main() {
 
                 </form>
             </div>
-
+            </div>
 
 
 
