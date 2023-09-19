@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.header_vol {
+    background: url('../../media/img/fd_vol.jpg');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 960px;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main_vol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+  .main_vol h1 {
+    font-size: 4.5em;
+    font-family: 'Chilanka',cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.main_vol h2 {
+    font-size: 3.5em;
+    font-family: 'Chilanka',cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main_vol p {
+    font-size: x-large;
+    font-family: 'Chilanka';
+    font-weight: 400;
+    align-self: center;
+}
+
+.card  {
+    width: 360px;
+    height: 482px;
+    border-radius: 22px;
+    box-shadow: 1px 2px 5px grey;
+}
+
+.asie,.europe,.amerique,.afrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
