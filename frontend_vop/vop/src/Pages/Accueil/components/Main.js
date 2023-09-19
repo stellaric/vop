@@ -21,36 +21,39 @@ export default function Main() {
         <h2>Nos Destinations Populaires</h2>
 
         <div className="destination_card">
-          <div className="card">
-            <img src={imgDest1} alt="img_test" />
+          <div className="card_portugal">
+            <img src={imgDest1} alt="img_portugal" />
             <h4>Lisbonne</h4>
             <p>Description</p>
-          </div>
+            </div>
+         
 
-          <div className="card">
-            <img src={imgDest2}  alt="img_test" />
+          <div className="card_italie">
+            <img src={imgDest2} alt="img_italie" />
             <h4>Lisbonne</h4>
             <p>Description</p>
-          </div>
+            </div>
+  
 
-          <div className="card">
-            <img src={imgDest3}  alt="img_test" />
+          <div className="card_paris">
+            <img src={imgDest3} alt="img_paris" />
             <h4>Lisbonne</h4>
             <p>Description</p>
+            </div>
           </div>
-        </div>
+ 
       </section>
       {/*section : slide */}
       <section className="slide">
       <Carousel>
-        <div className="slide_img">
-          <img src={test} alt="Image 1" />
+        <div className="slide1">
+       
         </div>
-        <div className="slide_img">
-          <img src={imgDest1} alt="Image 2" />
+        <div className="slide2">
+       
         </div>
-        <div className="slide_img">
-          <img src={imgDest2} alt="Image 2" />
+        <div className="slide3">
+    
         </div>
        
       </Carousel>
