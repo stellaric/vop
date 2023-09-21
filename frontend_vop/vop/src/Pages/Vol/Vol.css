@@ -87,15 +87,25 @@ body{
     flex-direction: column;
 }
 
+
 .card_img {
     height: 50%;
+    display:block;
+    overflow:hidden;
+    border-radius: 22px 22px 0px 0px;
 }
 
 .card_img img {
+    transition: all 0.2s;
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.card_img:hover img{
+    transform:scale(1.2);
     border-radius: 22px 22px 0px 0px;
 }
 .card_contenu {
@@ -119,6 +129,11 @@ body{
     border-radius: 0px 0px 22px 22px;
     border: 0px;
     padding: 20px;
+    background-color: #df921e;
+    text-transform: uppercase;
+    font-family: 'Chilanka';
+    font-weight: 600;
+    color: white;
 }
 
 .card_footer button:hover {
@@ -134,3 +149,90 @@ body{
     align-items: center;
     margin-bottom: 25px;
 }
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content {
+    background: white;
+    width: 450px;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.modal-img {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  
+  .modal-img img {
+    width: 750px;
+    height: 750px;
+    object-fit: cover;
+  }
+  
+  .modal-txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 9px;
+}
+
+.modal-footer button {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background-color: #54ba2c;
+    font-size: large;
+    border: 0px;
+    color: white;
+    font-family: 'Chilanka';
+    font-weight: 600;
+    color: white;
+}
+
+.modal-footer button:hover {
+    background-color: #4a982b;
+    color: white;
+ }
+ 
+
+
+  span.close {
+    color: white;
+    position: absolute;
+    right: 370px;
+    font-size: 54px;
+    font-weight: 800;
+    text-shadow: -2px 2px 4px #8080809c;
+  }

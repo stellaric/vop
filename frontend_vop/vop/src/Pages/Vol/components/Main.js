@@ -8,6 +8,7 @@ import turquie1 from "../../../media/images/turquie1.jpg";
 import japon1 from "../../../media/images/japon1.jpg";
 import malaysia1 from "../../../media/images/malaysia1.jpg";
 
+import senegal1 from "../../../media/images/senegal1.jpg";
 
 
 
@@ -25,23 +26,23 @@ export default function Main (){
             {
               id: "Europe",
               name: "Europe",
-              description: "Contenu wall",
+              description: "Contenu Europe",
         
             },
             {
               id: "Asie",
               name: "Asie",
-              description: "Contenu Gallery",
+              description: "Contenu Asie",
             },
             {
               id: "Amerique",
               name: "Amérique",
-              description: "Video",
+              description: "Contenu Amerique",
             },
             {
               id: "Afrique",
               name: "Afrique",
-              description: " contenu Music",
+              description: " Contenu Afrique",
             },
           ];
         
@@ -85,40 +86,68 @@ export default function Main (){
                       <div> {/*----section Europe----*/}
                         {category.id === "Europe" && <Section
                         image1={italie1}
-                        description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        titre1="Italie"
+                        description1="ceci une descritipn"
+                        prix1="270€"
                         image2={greece1}
+                        titre2="Grece"
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                         prix2="450€"
                         image3={finland1}
+                        titre3="Finlande"
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                         prix3="620€"
                         /> }
 
 
                         {/*----section Asie----*/}
                         {category.id === "Asie"&& <Section
                         image1={turquie1}
+                        titre1="Turquie"
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        prix1="320€"
                         image2={japon1}
+                        titre2="Japon"
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        prix2="870€"
                         image3={malaysia1}
+                        titre3="Malaisie"
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        prix3="950€"
                         /> }
                         
 
                         {/*----section Amérique---*/}
                         {category.id === "Amerique" && <Section
                         image1={greece1}
+                        titre1="New York"
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        prix1="720€"
                         image2={greece1}
+                        titre2="Berveley Hills"
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        prix2="810€"
                         image3={malaysia1}
+                        titre3="Californie"
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
-                       
+                        prix3="680€"
                         />}
                         {/*----section Afrique---*/}
                         {category.id === "Afrique" && <Section
-                        image1={greece1}
-                        description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
-                        />}
+                       image1={greece1}
+                       titre1="Côte d'Ivoire"
+                       description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                       prix1="560€"
+                       image2={greece1}
+                        titre2="Cameroun"
+                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        prix2="620€"
+                        image3={senegal1}
+                        titre3="Sénégal"
+                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        prix3="680€"
+                       />}
+                       
                       </div>
                     )}
                    
