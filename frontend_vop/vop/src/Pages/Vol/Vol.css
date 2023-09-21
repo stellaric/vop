@@ -121,6 +121,12 @@ body{
     padding: 20px;
 }
 
+.card_footer button:hover {
+   background-color: #e0a02c;
+   color: white;
+}
+
+
 .asie,.europe,.amerique,.afrique {
     display: flex;
     flex-direction: row;

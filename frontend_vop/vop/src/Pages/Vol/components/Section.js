@@ -12,7 +12,7 @@ export default function Section(props){
             <p>{props.description1} </p>
           </div>
           <div className="card_footer">
-           <button>test</button>
+           <button>Voir plus</button>
           </div>
         </div>
 
