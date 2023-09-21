@@ -1,52 +1,54 @@
 import "../Voyage.css";
-import { Icon } from '@iconify/react';
+import DetailsVoyage from "./DetailsVoyage";
+import italie1 from "../../../media/images/italie1.jpg";
+import italie2 from "../../../media/images/italie2.jpg";
+import italie3 from "../../../media/images/italie3.jpg";
+import greece1 from "../../../media/images/greece1.jpg";
+import greece2 from "../../../media/images/greece2.jpg";
+import greece3 from "../../../media/images/greece3.jpg";
+
 
 export default function MainVoyage(props) {
-
+    
+        // Récupérez la valeur de la prop cName depuis l'URL (si vous utilisez react-router-dom)
+        const searchParams = new URLSearchParams(window.location.search);
+        const cName = searchParams.get("cName");
+      
     return (
-        <div className="main">
-            <div className="titres">
-                <h2>{props.continent}</h2>
-                <h3>{props.pays}</h3>
+        <>
+         {/* Affichez le composant DetailsVoyage seulement si cName est "italie" */}
+      {cName === "italie" && (
+        <DetailsVoyage
+        cName="Italie"
+        continent="Europe"
+        pays="Italie"
+       
+       
+        myImg1={italie1}
+        myImg2={italie2}
+        myImg3={italie3}
+       
+       paragraphe="L'Italie constitue sans l'ombre d'un doute l'une des destinations les plus célèbres et appréciées du monde entier. La célèbre botte d'Europe du Sud abrite en effet d'incroyables trésors. On y découvre ainsi sa capitale, Rome, imprégnée d'une histoire millénaire. Ancien centre névralgique de l'Empire Romain, la capitale italienne abrite de nombreux monuments incontournables tels que le légendaire Colisée. L'Italie, ce sont aussi des milliers de kilomètres de côtes, idéales pour des vacances reposantes au soleil et au bord de la mer. La gastronomie italienne constitue également l'un des traits de caractères les plus emblématiques du pays européen. Pâtes en tout genre, pizzas napolitaines, tiramisu... Autant de spécialités qu'il ne faudra sous aucun prétexte manquer lors de son séjour. Entre les ruines de Pompéi et d'Herculanum, le volcan du Vésuve ou encore les villages colorés de Cinque Terre, l'Italie ne peut que surprendre et émerveiller."
+       
+       />
+      )}
+       
+       {cName === "grece" && (
+       <DetailsVoyage
+        cName="grece"
+        continent="Europe"
+        pays="Grèce"
+       
+       
+        myImg1={greece1}
+        myImg2={greece2}
+        myImg3={greece3}
+       
+       
+       paragraphe="Destination phare de la Méditerranée, la Grèce se démarque par une histoire riche et complexe, des paysages côtiers à couper le souffle et une culture singulière. Lors d'un séjour en Grèce, on a l'opportunité de découvrir certains des sites archéologiques les plus impressionnants et les mieux entretenus du monde entier. Ainsi, à l'occasion d'un passage dans la capitale, Athènes, on découvre l'incroyable Parthénon, niché au sommet d'une colline depuis laquelle il est possible d'admirer l'ensemble de la cité grecque. Bien sûr, de part et d'autre de ce pays qui ne fait qu'un avec la mer, on découvre des îles paradisiaques, et notamment au sein de l'archipel des Cyclades. Là-bas, apprenez-en davantage sur ces demeures blanches aux toitures bleues caractéristiques. Rendez-vous jusqu'en Crète pour faire la découverte du palais de Cnossos. Lors de votre séjour, goûtez certaines spécialités légendaires parmi lesquelles la moussaka et la feta.."
+       />
 
-            </div>
-
-            <div className="photos">
-                <img
-                    src={props.myImg1}
-                    alt="image1"
-                    style={{ maxWidth: '765px', height: '634px', marginRight: '10px' }}
-                />
-                <div className="miniPhotos">
-                <img
-                    src={props.myImg2}
-                    alt="image2"
-                    style={{ maxWidth: '565px', height: '434px', marginRight: '10px' }}
-                />
-                <img
-                    src={props.myImg3}
-                    alt="image3"
-                    style={{ maxWidth: '565px', height: '434px' }}
-                />
-                </div>
-            </div>
-
-           
-
-            <div className="details">
-                <div className="date"><Icon icon="uiw:date" color="#df921e" width="50"/> <p>{props.date}</p> </div>
-                <div className="dep"><Icon icon="pepicons-pencil:airplane-circle-filled" color="#df921e" width="50" /><p>{props.départ}</p></div>
-                <p>90€ / personne</p>
-
-            </div>
-
-            <div className="texte">
-                <p>{props.paragraphe}</p>
-
-            </div>
-
-                <form className="resa"> <p>Reservation</p></form>
-
-        </div>
+       )}
+       </>
     );
 }

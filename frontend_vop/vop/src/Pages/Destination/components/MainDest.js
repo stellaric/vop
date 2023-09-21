@@ -7,6 +7,17 @@ import finland1 from "../../../media/images/finland1.jpg";
 import turquie1 from "../../../media/images/turquie1.jpg";
 import japon1 from "../../../media/images/japon1.jpg";
 import malaysia1 from "../../../media/images/malaysia1.jpg";
+import colombia1 from "../../../media/images/colombia1.jpg";
+import cuba2 from "../../../media/images/cuba2.jpg";
+import mexico1 from "../../../media/images/mexico1.jpg";
+import senegal1 from "../../../media/images/senegal1.jpg";
+import cap1 from "../../../media/images/cap1.jpg";
+import alg1 from "../../../media/images/alg1.jpg";
+
+
+
+
+
 
 
 
@@ -23,25 +34,25 @@ export default function MainDestination (){
         
             },
             {
-              id: "Wall",
+              id: "europe",
               name: "Europe",
               description: "Contenu wall",
         
             },
             {
-              id: "Gallery",
+              id: "asie",
               name: "Asie",
-              description: "Contenu Gallery",
+              description: "Contenu asie",
             },
             {
-              id: "Video",
+              id: "amerique",
               name: "Amérique",
-              description: "Video",
+              description: "amerique",
             },
             {
-              id: "Music",
+              id: "afrique",
               name: "Afrique",
-              description: " contenu Music",
+              description: " contenu afrique",
             },
           ];
         
@@ -57,7 +68,8 @@ export default function MainDestination (){
             <div className="mainTab">
               <div className="tab">
                 {categories.map((category) => (
-                  <button
+                  
+                <button
                     key={category.id}
                     className={`tablinks ${
                       activeTab === "All" || activeTab === category.id ? "active" : ""
@@ -80,16 +92,18 @@ export default function MainDestination (){
                     <h3>{category.name}</h3>
                     {activeTab === "All" && (
                       <div> {/*----section Europe----*/}
-                        {category.id === "Wall" && <Section
+                        {category.id === "europe" && <Section
                         image1={italie1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        lien="/voyage?cName=Italie"
                         image2={greece1}
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        lien="/voyage?cName=grece"
                         image3={finland1}
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         /> }
                         {/*----section Asie----*/}
-                        {category.id === "Gallery"&& <Section
+                        {category.id === "asie"&& <Section
                         image1={turquie1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         image2={japon1}
@@ -100,20 +114,28 @@ export default function MainDestination (){
                         
 
                         {/*----section Amérique---*/}
-                        {category.id === "Video" && <Section
-                        image1={greece1}
+                        {category.id === "amerique" && <Section
+                        image1={colombia1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        image2={cuba2}
+                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        image3={mexico1}
+                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         />}
                         {/*----section Afrique---*/}
-                        {category.id === "Music" && <Section
-                        image1={greece1}
+                        {category.id === "afrique" && <Section
+                        image1={senegal1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        image2={cap1}
+                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        image3={alg1}
+                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         />}
                       </div>
                     )}
                     {activeTab === category.id && (
                       <div>
-                        {category.id === "Wall" && <Section
+                        {category.id === "europe" && <Section
                         image1={italie1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         image2={greece1}
@@ -122,7 +144,7 @@ export default function MainDestination (){
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         /> }
                         {/*----section Asie----*/}
-                        {category.id === "Gallery"&& <Section
+                        {category.id === "asie"&& <Section
                         image1={turquie1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         image2={japon1}
@@ -131,21 +153,30 @@ export default function MainDestination (){
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         /> }
                         
-
                         {/*----section Amérique---*/}
-                        {category.id === "Video" && <Section
-                        image1={greece1}
+                        {category.id === "amerique" && <Section
+                        image1={colombia1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        image2={cuba2}
+                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        image3={mexico1}
+                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         />}
                         {/*----section Afrique---*/}
-                        {category.id === "Music" && <Section
-                        image1={greece1}
+                        {category.id === "afrique" && <Section
+                        image1={senegal1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        image2={cap1}
+                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        image3={alg1}
+                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         />}
+                        
                       </div>
                     )}
                   </div>
                 ))}
+                
               </div>
             </div>
     );
