@@ -1,7 +1,5 @@
 import { userModel } from "../models/userModel.js";
-
-
-
+//creer  des utilisateurs ;
 export const register = async (req, res) => {
     // je recupère ce que l'utilisateur a saisi
     const { nom, prenom, email, password } = req.body

@@ -1,6 +1,6 @@
 // les routes en générales  definnissent le chemin de la page qu'on souhaite afficher sur le navigateur
 
-import { createUsers, deleteUsers, getUsers, putUsers } from "../controllers/UserController.js";
+import { deleteUsers, getUsers, putUsers } from "../controllers/UserController.js";
 import { signIn, register, logout } from "../controllers/auth.controller.js";
 //on importe exprsee
 import express from "express";
@@ -14,5 +14,5 @@ router.get("/", getUsers);
 router.delete("/", deleteUsers);
 router.put("/", putUsers);
 
-
+// on renome la route pour ne pas avoir de compliit
 export { router as userRoutes };

@@ -1,11 +1,12 @@
 import logo from "../media/img/logo_vop.png";
 import { Link } from "react-router-dom";
-import React  from "react";
+import React, { useState }  from "react";
 import "../App.css";
+import DropdownActivite from "../Pages/Activity/components/DropdownActivite";
 
 export default function Header() {
-
- 
+  //ajoux de dropdown sur activité
+  const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
     <>
       {/*navbar*/}
@@ -21,11 +22,13 @@ export default function Header() {
           <Link to={"/vol"}>Vol</Link>
           <Link to={"/hotel"}>Hôtels</Link>
           <Link to={"/destination"}>Destinations</Link>
-          <Link to={"/activite"}>Activités</Link>
+          {/* // quand on click on nevois a la fonction qui permet de'afficher la liste déroulante si on fait rien rien ne s'affiche */}
+          <Link to={"/activite"} onClick={() => setDropdownVisible(!dropdownVisible)}>
+            Activités
+          </Link>
           </div>
 
-        <div className="onglets_icon">
-            
+        <div className="onglets_icon">  
           <div className="flag">
             <span className="iconify" data-icon="emojione-v1:flag-for-france" />
             <span className="iconify" data-icon="emojione-v1:flag-for-united-kingdom" />
@@ -42,7 +45,16 @@ export default function Header() {
           </div>
         </div>
       </nav>
+    {/* Afficher le dropdown s'il est visible */}
+      {dropdownVisible && <DropdownActivite />}
 
 </>
   );
 }
+
+
+
+
+
+
+

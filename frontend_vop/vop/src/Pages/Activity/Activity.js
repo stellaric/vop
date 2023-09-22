@@ -1,13 +1,19 @@
 
 import React from 'react';
-import { Link } from "react-router-dom";
+import Header from './components/Header';
+import Footer from '../../componentsG/Footer';
+import Main from './components/Main';
+
+
+
 export default function Activity() {
     return (
         <>
-       
+       <Header/>
+       <Main/>
+       <Footer/>
 
-   <p>Ceci est la page activite </p>
-   <Link to={"/"}>Retour à Accueil</Link> 
+   
    </>
     );
 }
