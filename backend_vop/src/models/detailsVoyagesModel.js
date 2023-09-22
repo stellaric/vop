@@ -30,8 +30,7 @@ const detailsVoyagesSchema = new mongoose.Schema({
         unique:true,
         required:true,
     },
-    
-    
+       
 
 })
 

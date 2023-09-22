@@ -19,9 +19,7 @@ const avisSchema  = new mongoose.Schema({
         type:date,
         unique:true,
         required:true,
-    },
-
-      
+    },     
 
 })
 
