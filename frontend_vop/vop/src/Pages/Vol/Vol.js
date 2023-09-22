@@ -1,14 +1,19 @@
-
+import Header from './components/Header';
+import Main from './components/Main';
 import React from 'react';
-import { Link } from "react-router-dom";
+import Footer from '../../componentsG/Footer';
+
+
 export default function Vol() {
     return (
-        <>
        
+        <>
+     <Header/>
+   <Main/>
+     <Footer/>
+     
 
-   <p>Ceci est la page vol </p>
-   <Link to={"/"}>Retour à Accueil</Link> 
-   </>
+     </>
     );
 }
 

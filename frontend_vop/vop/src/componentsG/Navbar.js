@@ -19,7 +19,7 @@ export default function Header() {
         </div>
 
         <div className="onglets">
-          <Link to={"/vol"}>Vol</Link>
+          <Link to={"/vol"}>Vols</Link>
           <Link to={"/hotel"}>Hôtels</Link>
           <Link to={"/destination"}>Destinations</Link>
           {/* // quand on click on nevois a la fonction qui permet de'afficher la liste déroulante si on fait rien rien ne s'affiche */}

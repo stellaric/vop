@@ -2,7 +2,6 @@ import React from "react";
 import "../Accueil.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Styles CSS de la bibliothèque
 import { Carousel } from "react-responsive-carousel";
-import test from "../../../media/img/slide1.jpg";
 import imgDest1 from "../../../media/img/img_dest_1.jpg";
 import imgDest2 from "../../../media/img/img_dest_2.jpg";
 import imgDest3 from "../../../media/img/img_dest_3.jpg";
@@ -21,36 +20,39 @@ export default function Main() {
         <h2>Nos Destinations Populaires</h2>
 
         <div className="destination_card">
-          <div className="card">
-            <img src={imgDest1} alt="img_test" />
-            <h4>Lisbonne</h4>
+          <div className="card_portugal">
+            <img src={imgDest1} alt="img_portugal" />
+            <h4>Portugal</h4>
             <p>Description</p>
-          </div>
+            </div>
+         
 
-          <div className="card">
-            <img src={imgDest2}  alt="img_test" />
-            <h4>Lisbonne</h4>
+          <div className="card_italie">
+            <img src={imgDest2} alt="img_italie" />
+            <h4>Italie</h4>
             <p>Description</p>
-          </div>
+            </div>
+  
 
-          <div className="card">
-            <img src={imgDest3}  alt="img_test" />
-            <h4>Lisbonne</h4>
+          <div className="card_paris">
+            <img src={imgDest3} alt="img_paris" />
+            <h4>Paris</h4>
             <p>Description</p>
+            </div>
           </div>
-        </div>
+ 
       </section>
       {/*section : slide */}
       <section className="slide">
       <Carousel>
-        <div className="slide_img">
-          <img src={test} alt="Image 1" />
+        <div className="slide1">
+       
         </div>
-        <div className="slide_img">
-          <img src={imgDest1} alt="Image 2" />
+        <div className="slide2">
+       
         </div>
-        <div className="slide_img">
-          <img src={imgDest2} alt="Image 2" />
+        <div className="slide3">
+    
         </div>
        
       </Carousel>
