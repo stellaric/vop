@@ -1,7 +1,7 @@
 import Navbar from '../../../componentsG/Navbar'
 import React  from "react";
 import "../Accueil.css";
-
+import "../../../mobile.css"
 export default function Header() {
 
   return (
@@ -11,8 +11,11 @@ export default function Header() {
 
 <div className='card_search'>
     <div className='card_search_content'>
-      ceci est un test 
+      <input type="search" placeholder="Destination"/>
+       <input type="text" placeholder="Type de Destination"/>
+      <input type="month" />
     </div>
+    <button><span className="iconify" data-icon="ri:search-line"  /></button>
 </div>
 
 

@@ -15,8 +15,8 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  background-color: #cdcbcb47;
-  box-shadow: -3px 2px 1px #80808082;
+  background-color: #cdcbcb00;
+  box-shadow: -3px 2px 1px #9c9c9c47;
 }
 
 .onglets {
@@ -55,6 +55,10 @@ body {
   color: black;
 }
 
+
+.menu_mobile{
+  display: none;
+}
 
 /**/
 
@@ -147,4 +151,5 @@ body {
   width: 120px;
   align-self: center;
 }
+
 

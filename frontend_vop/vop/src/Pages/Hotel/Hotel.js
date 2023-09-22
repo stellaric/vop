@@ -1,14 +1,19 @@
-
+import Header from './components/Header';
+import Main from './components/Main';
 import React from 'react';
-import { Link } from "react-router-dom";
-export default function Hotel() {
+import Footer from '../../componentsG/Footer';
+import '../../App.css'
+import '../../mobile.css'
+export default function Accueil() {
     return (
-        <>
        
+        <>
+     <Header/>
+   
+     <Footer/>
+     
 
-   <p>Ceci est la page hotel </p>
-   <Link to={"/"}>Retour à Accueil</Link> 
-   </>
+     </>
     );
 }
 

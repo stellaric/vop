@@ -1,47 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chilanka&family=Inter:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chilanka&family=Inter:wght@300&display=swap");
 
 /*Header*/
 .header {
-    background: url('../../media/img/fd-1.jpg');
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 960px;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 960px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: backgroundChange 15s linear infinite; /* Change l'arrière-plan toutes les 15 secondes */
+  
+}
+/* Créez une animation nommée 'backgroundChange' */
+@keyframes backgroundChange {
+    0% {
+      background-image:  url("../../media/images/alg2.jpg") /* Première image */
+    }
+    33% {
+      background-image:  url("../../media/images/cuba1.jpg"); /* Deuxième image */
+    }
+    66% {
+      background-image:  url("../../media/images/finland1.jpg"); /* Troisième image */
+    }
+    100% {
+      background-image:  url("../../media/images/greece1.jpg"); /* Retour à la première image */
+    }
   }
-
-
-  .card_search {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #ffffff75;
-    max-width: 1000px;
-    align-self: center;
-    width: 100%;
-    max-height: 110px;
-    height: 100%;
-    border-radius: 22px;
+.card_search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff75;
+  max-width: 1000px;
+  align-self: center;
+  width: 100%;
+  max-height: 110px;
+  height: 100%;
+  border-radius: 22px;
+  align-items: center;
 }
-  /*main*/
+
+.card_search_content {
+  width: 80%;
+  background: white;
+  height: 60%;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+.card_search button {
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  background: #ff8d69;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 1px 2px grey;
+  margin: 15px;
+  color: white;
+  font-size: x-large;
+}
+
+.card_search button:hover {
+    background: #e97e5d;
+    box-shadow: 1px 1px rgb(117, 115, 115);
+  }
+/*main*/
 .main_accueil h2 {
-    font-size: 4em;
-    font-family: 'Chilanka',cursive;
-    font-weight: 400;
-    text-align: center;
-    height: 150px;
+  font-size: 4em;
+  font-family: "Chilanka", cursive;
+  font-weight: 400;
+  text-align: center;
+  height: 150px;
 }
-.destination , .slide , .team,.temoignage {
-    display: flex;
-    flex-direction: column;
-    height: 960px;
+.destination,
+.slide,
+.team,
+.temoignage {
+  display: flex;
+  flex-direction: column;
+  height: 960px;
 }
 
 /*section : destination */
@@ -52,27 +98,35 @@
     background-repeat: no-repeat;
 }*/
 .destination_card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.card_portugal img , .card_italie img ,.card_paris img {
-    width: 360px;
-    height: 482px;
-    border-radius: 22px;
-    box-shadow: 1px 2px 5px grey;
+.card_portugal img,
+.card_italie img,
+.card_paris img {
+  width: 360px;
+  height: 482px;
+  border-radius: 22px;
+  box-shadow: 1px 2px 5px grey;
 }
 
-.card_portugal,.card_italie,.card_paris {
-        width: 360px;
-    height: 482px;
-    position: relative;
-    cursor: pointer;
-  }
+.card_portugal,
+.card_italie,
+.card_paris {
+  width: 360px;
+  height: 482px;
+  position: relative;
+  cursor: pointer;
+}
 
-  .card_portugal::before,.card_italie::before,.card_paris::before,
-.card_portugal::after,.card_italie::after,.card_paris::after {
+.card_portugal::before,
+.card_italie::before,
+.card_paris::before,
+.card_portugal::after,
+.card_italie::after,
+.card_paris::after {
   position: absolute;
   content: "";
   width: 20%;
@@ -82,33 +136,44 @@
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
-    color: white;
+  color: white;
   transition: all 0.5s;
 }
-.card_portugal::before,.card_portugal::after{
-    background-color: rgba(215, 87, 134, 0.521);
+.card_portugal::before,
+.card_portugal::after {
+  background-color: rgba(215, 87, 134, 0.521);
 }
-.card_italie::before,.card_italie::after{
-    background-color: rgba(98, 215, 87, 0.521);
+.card_italie::before,
+.card_italie::after {
+  background-color: rgba(98, 215, 87, 0.521);
 }
-.card_paris::before,.card_paris::after{
-    background-color: rgba(215, 125, 87, 0.521);
+.card_paris::before,
+.card_paris::after {
+  background-color: rgba(215, 125, 87, 0.521);
 }
 
-.card_portugal::before,.card_italie::before,.card_paris::before {
+.card_portugal::before,
+.card_italie::before,
+.card_paris::before {
   top: 0;
   right: 0;
   border-radius: 0 15px 0 100%;
 }
 
-.card_portugal::after,.card_italie::after,.card_paris::after  {
+.card_portugal::after,
+.card_italie::after,
+.card_paris::after {
   bottom: 0;
   left: 0;
-  border-radius: 0 100%  0 15px;
+  border-radius: 0 100% 0 15px;
 }
 
-.card_portugal:hover::before,.card_italie:hover::before,.card_paris:hover::before,
-.card_portugal:hover:after,.card_italie:hover:after,.card_paris:hover:after {
+.card_portugal:hover::before,
+.card_italie:hover::before,
+.card_paris:hover::before,
+.card_portugal:hover:after,
+.card_italie:hover:after,
+.card_paris:hover:after {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -121,108 +186,107 @@
 }
 
 .card_italie:hover:after {
-    content: "Italie";
-    color: white;
-  }
+  content: "Italie";
+  color: white;
+}
 
 /*section : slide */
-.slide1 ,.slide2,.slide3 {
-    height: 960px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.slide1,
+.slide2,
+.slide3 {
+  height: 960px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slide1 {
-     background: url(../../media/img/img_dest_1.jpg);
+  background: url(../../media/img/img_dest_1.jpg);
 }
 .slide2 {
-     background: url(../../media/img/img_dest_2.jpg);
+  background: url(../../media/img/img_dest_2.jpg);
 }
 .slide3 {
-     background: url(../../media/img/img_dest_3.jpg);
+  background: url(../../media/img/img_dest_3.jpg);
 }
 
 .carousel .thumbs-wrapper {
-    display: none;
+  display: none;
 }
 
 .carousel .carousel-status {
-    visibility: hidden;
+  visibility: hidden;
 }
 li.dot {
-    padding: 10px;
+  padding: 10px;
 }
 /*section : team */
-.team{
-    background: url(../../media/img/fd_destination.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+.team {
+  background: url(../../media/img/fd_destination.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-.card_team{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.card_team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .card_team img {
-    width: 420px;
-    height: 420px;
-    border-radius: 100%;
-    object-fit: cover;
-    object-position: top;
+  width: 420px;
+  height: 420px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .card_team_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Chilanka',cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Chilanka", cursive;
 }
 
 /*section : temoignage */
-.temoignage{
-    background: url(../../media/img/fd_temoignage.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-    align-items: center;
+.temoignage {
+  background: url(../../media/img/fd_temoignage.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  align-items: center;
 }
 .temoignage h2 {
-color: #FFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-family: Cherry Bomb One;
-font-size: 4em;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Cherry Bomb One;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .card_temoignage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff8c;
-    max-width: 950px;
-    width: 100%;
-    max-height: 350px;
-    height: 100%;
-    box-shadow: 1px 2px 8px #808080ad;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff8c;
+  max-width: 950px;
+  width: 100%;
+  max-height: 350px;
+  height: 100%;
+  box-shadow: 1px 2px 8px #808080ad;
 }
 
 .card_temoignage p {
-    font-family: 'Chilanka',cursive;
-    font-size: xx-large;
+  font-family: "Chilanka", cursive;
+  font-size: xx-large;
 }
 
 .card_temoignage_footer {
-    align-self: flex-end;
-    margin-right: 120px;
+  align-self: flex-end;
+  margin-right: 120px;
 }
