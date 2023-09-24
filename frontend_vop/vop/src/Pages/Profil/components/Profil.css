@@ -1,0 +1,69 @@
+/* css container */
+.moncontainer {
+  height: 100vh;
+  display: flex;
+}
+
+.container_profil {
+  background-color: #df921e;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  padding-left: 10px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.bloc_infopersonne {
+  margin-top: -100px;
+  right: 100px;
+}
+.styliseicon {
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: -35px;
+  padding: 5px;
+}
+/* css card  */
+.mycard {
+  width: 900px;
+  height: 254px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 2rem;
+  border: 2px solid #000;
+  margin-left: 30px;
+  padding: 20px 0 0 20px;
+  position: relative;
+}
+.imagemer {
+  width: 240px;
+  height: 240px;
+}
+.imagemer img {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 140px;
+  font-size: 50px;
+  color: #000;
+  font-weight: bold;
+}
+.cancel-btn {
+  position: absolute;
+  right: 13px;
+  bottom: 10px;
+  border-radius: 15px;
+  border-style: none;
+  padding: 10px;
+}

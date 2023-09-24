@@ -1,5 +1,6 @@
+/* hedear css */
 .header_activity {
-  background: url("../../media/img1/active1.jpg");
+  background: url("../../media/img1/active1.jpeg");
   top: 0;
   left: 0;
   width: 100%;
@@ -12,13 +13,13 @@
   flex-direction: column;
   justify-content: space-between;
 }
- /* début css liste déroulante */
- 
+/* début css liste déroulante */
+
 .dropdown-menu {
-  
-  display: flex; /* Afficher les éléments en ligne */ 
-  top: 300px; 
-  margin-bottom: 400px;
+  background-color: #df921e;
+  display: flex; /* Afficher les éléments en ligne */
+  top: 300px;
+  margin-bottom: 500px;
   justify-content: space-around;
 }
 
@@ -28,26 +29,34 @@
 .dropdown-amerique,
 .dropdown-afrique {
   color: white;
-  margin: 10px; 
+  margin: 10px;
   padding: 10px;
-   
 }
 .dropdown-menu h4 {
-  margin-top: 0px; 
-  font-weight : bold;
-  font-size:  30Px ;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 30px;
 }
 .dropdown-menu ul {
   list-style: none; /* Supprimer les puces de liste */
-  padding: 0; 
+  padding: 0;
 }
 .dropdown-menu li {
-  margin: 5px 0; 
+  margin: 5px 0;
 }
-.text{text-align: center;
-}/* Fin css liste déroulante */
+.text {
+  text-align: center;
+} /* Fin css liste déroulante */
 
 /*css  pour les  cards */
+h1{
+  text-align: center;
+  margin-bottom: 300px;
+  font-size: 50px;
+  color:red;
+  font-weight: bold;
+
+}
 .card {
   position: relative;
   width: 300px;

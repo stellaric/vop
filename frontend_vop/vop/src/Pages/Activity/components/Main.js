@@ -7,11 +7,12 @@ import active4 from "../../../media/img1/active4.jpg"
 
 
 export default function Main() {
+    
 
     // card
     return (
         <main className="text">
-            <h1>Activités Italie</h1>
+            <h2>Activités Italie</h2>
             <section className="activity_accueil">
                 {/* <img src={vector}alt="forme rose" /> */}
                 <div className="card">
