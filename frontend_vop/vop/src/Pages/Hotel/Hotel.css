@@ -12,3 +12,17 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.header_hotel p {
+    font-family: 'Fasthand', cursive;
+    text-align: center;
+    font-size: 120px;
+    margin-bottom: -135px;
+    color: #FFF;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .header_hotel{
+      height: 560px;
+    }
+}

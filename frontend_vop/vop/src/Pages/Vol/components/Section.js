@@ -10,20 +10,26 @@ export default function Section(props) {
   const [selectedDescription, setSelectedDescription] = useState(''); // Ajoutez un état pour la description
   const [selectedPrix, setSelectedPrix] = useState(''); // Ajoutez un état pour la description
   const [selectedLien, setSelectedLien] = useState(''); // Ajoutez un état pour la description
- 
+  const [selectedCompagnie, setSelectedCompagnie] = useState(''); // Ajoutez un état pour la description
+  
 
-  const openModal = (imgUrl,titre,description,prix,lien) => {
+  const openModal = (imgUrl,titre,description,prix,lien,compagnie) => {
     setSelectedImage(imgUrl);
     setSelectedTitre(titre); 
     setSelectedDescription(description); // Utilisez setSelectedDescription pour stocker la description
     setSelectedPrix(prix); 
     setSelectedLien(lien); 
+    setSelectedCompagnie(compagnie); 
     setModalVisibility(true);
   };
 
   const closeModal = () => {
     setSelectedImage('');
     setSelectedDescription(''); // Réinitialisez également la description lorsque le modal se ferme
+    setSelectedTitre(''); 
+   setSelectedPrix(''); 
+    setSelectedLien(''); 
+    setSelectedCompagnie(''); 
     setModalVisibility(false);
   };
 
@@ -37,6 +43,7 @@ export default function Section(props) {
           <div className="card_contenu">
           <h3>{props.titre1}</h3>
             <p>{props.description1}</p>
+            <p className='compagnie'>{props.compagnie1}</p>
             <p className='prix'>{props.prix1}</p>
           </div>
           <div className="card_vol_footer">
@@ -50,6 +57,7 @@ export default function Section(props) {
           <div className="card_contenu">
           <h3>{props.titre2}</h3>
             <p>{props.description2}</p>
+            <p className='compagnie'>{props.compagnie2}</p>
             <p className='prix'>{props.prix2}</p>
           </div>
           <div className="card_vol_footer">
@@ -64,6 +72,7 @@ export default function Section(props) {
           <div className="card_contenu">
           <h3>{props.titre3}</h3>
             <p>{props.description3}</p>
+            <p className='compagnie'>{props.compagnie3}</p>
             <p className='prix'>{props.prix3}</p>
           </div>
           <div className="card_vol_footer">
@@ -77,6 +86,7 @@ export default function Section(props) {
           imgUrl={selectedImage}
           titre={selectedTitre}
           description={selectedDescription}
+          compagnie={selectedCompagnie}
           prix={selectedPrix}
           lien={selectedLien}
           onClose={closeModal}

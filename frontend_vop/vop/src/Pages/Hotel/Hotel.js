@@ -9,7 +9,7 @@ export default function Accueil() {
        
         <>
      <Header/>
-   
+        <Main/>
      <Footer/>
      
 

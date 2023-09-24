@@ -32,6 +32,7 @@
       background-image:  url("../../media/images/greece1.jpg"); /* Retour à la première image */
     }
   }
+
 .card_search {
   display: flex;
   flex-direction: row;
@@ -200,26 +201,12 @@
   background-position: center;
 }
 
-.slide1 {
-  background: url(../../media/img/img_dest_1.jpg);
-}
-.slide2 {
-  background: url(../../media/img/img_dest_2.jpg);
-}
-.slide3 {
-  background: url(../../media/img/img_dest_3.jpg);
+.carousel {
+  height: 100%;
+ 
 }
 
-.carousel .thumbs-wrapper {
-  display: none;
-}
 
-.carousel .carousel-status {
-  visibility: hidden;
-}
-li.dot {
-  padding: 10px;
-}
 /*section : team */
 .team {
   background: url(../../media/img/fd_destination.png);
@@ -289,4 +276,90 @@ li.dot {
 .card_temoignage_footer {
   align-self: flex-end;
   margin-right: 120px;
+}
+
+.carousel {
+  height: 100%;
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 767px) {
+.header{
+  height: 695px;
+}
+.card_search{
+  max-width: 300px;
+  max-height: 350px;
+  flex-direction: column;
+}
+
+.card_search_content{
+  flex-wrap: wrap;
+}
+
+.main_accueil h2 {
+  font-size: 2em;
+  height: 50px;
+}
+.destination, .team, .temoignage {
+
+  height: auto;
+}
+.destination_card {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: scroll;
+}
+.slide{
+  height: 560px;
+}
+.card_portugal, .card_italie, .card_paris {
+  width: 350px;
+  height: 350px;
+  margin: 8px;
+ 
+}
+.card_portugal img, .card_italie img, .card_paris img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.card_team {
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: auto;
+}
+
+.card_team img {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card_temoignage p {
+  font-family: "Chilanka", cursive;
+  font-size: larger;
+}
+
+.card_temoignage {
+  display: flex;
+  flex-direction: column;
+   justify-content: center; 
+  align-items: center;
+  background: #ffffff8c;
+  max-width: 250px;
+  width: 100%;
+  max-height: 150px;
+  height: 100%;
+  box-shadow: 1px 2px 8px #808080ad;
+  overflow: scroll;
+  /* margin: 20px; */
+}
 }
