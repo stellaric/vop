@@ -1,7 +1,9 @@
 import React from "react";
 import "../Vol.css";
 
-export default function Modal({ imgUrl, titre, description, prix, onClose }) {
+export default function Modal({ imgUrl, titre, description, prix,lien, onClose }) {
+  const handleClick =()=>window.open(lien)
+  
   return (
     <div className="modal-overlay">
       <div className="modal-img">
@@ -13,9 +15,8 @@ export default function Modal({ imgUrl, titre, description, prix, onClose }) {
           <p>{description}</p>
           <p>{prix}</p>
           <div className="modal-footer">
-            <form action="get">
-              <button>Réserver</button>
-            </form>
+              <button type="submit" onClick={handleClick}>Réserver</button>
+
           </div>
         </div>
         <span className="close" onClick={onClose}>

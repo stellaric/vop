@@ -87,12 +87,15 @@ export default function Main (){
                         {category.id === "Europe" && <Section
                         image1={italie1}
                         titre1="Italie"
-                        description1="ceci une descritipn"
-                        prix1="270€"
+                        description1="L'Italie est un pays riche en contrastes , de ses villes historiques à ses magnifiques côtes méditéranéennes."
+                        prix1="240€"
+                        lien1="https://www.kombo.co/fr/app/round/1/1/202/2023-10-23/2023-10-27/Paris/Rome/inward/10yue0xyu0bw70s2ztjc0s2zz3c0010907r6/10xyu0yue0cul0s36sgo0s36yhc0010909wy/recap/passengers"
                         image2={greece1}
                         titre2="Grece"
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                          prix2="450€"
+                         lien2="https://www.kombo.co/fr/app/round/1/1/202/2023-10-23/2023-10-27/Paris/Rome/inward/10yue0xyu0bw70s2ztjc0s2zz3c0010907r6/10xyu0yue0cul0s36sgo0s36yhc0010909wy/recap/passengers"
+                       
                         image3={finland1}
                         titre3="Finlande"
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
