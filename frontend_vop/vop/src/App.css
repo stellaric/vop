@@ -4,10 +4,6 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
-
-
-
-
 /*navbar*/
 .navbar {
   display: flex;
