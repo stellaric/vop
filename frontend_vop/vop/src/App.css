@@ -110,15 +110,16 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-      display: flex;
-    margin-top: 40px;
-    width: 100%;
-    flex-direction: row;
-    left: 0;
-    justify-content: space-around;
-    background: rgb(248 200 128 / 87%);
-    padding-bottom: 35px;
-     color: white;
+  display: flex;
+  margin-top: 1px;
+  width: 100%;
+  flex-direction: row;
+  left: 0;
+  justify-content: space-around;
+  background: rgb(248 200 128 / 87%);
+  padding-bottom: 35px;
+  color: white;
+  padding-top: 35px;
 }
 
 /**/
