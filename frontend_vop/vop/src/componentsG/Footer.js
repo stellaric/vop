@@ -1,6 +1,6 @@
 import '../App.css';
 import { Icon } from '@iconify/react';
-import QRcode from '../media/images/QRcode.png';
+import QRcode from '../media/img/qr_code.png';
 import logo from '../media/images/logo.png';
 import { Link } from 'react-router-dom';
 

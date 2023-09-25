@@ -8,6 +8,7 @@ import Authentification from'./Pages/Authentification/Auth'
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import Contact from './Pages/Contact/Contact';
 import Voyage from './Pages/Voyage/Voyages';
+import Profil from "./Pages/Profil/components/Profil";
 import './App.css';
 
 
@@ -26,13 +27,11 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/voyage" element={<Voyage />} />
+          <Route path="/Profil" element={<Profil />} />
           
 
           </Routes>
         </Router>
-      
-
-
   );
 }
 
