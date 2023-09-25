@@ -22,10 +22,10 @@ export default function Footer() {
                 <div className='elem2'>
                     <p>Nos réseaux sociaux </p>
                     <div className='icon'>
-                        <Icon icon="la:facebook" color="white" width="60" height="60" />
-                        <Icon icon="bi:instagram" color="white" width="50" height="50" />
-                        <Icon icon="ph:tiktok-logo-thin" color="white" width="60" height="60" />
-                        <Icon icon="uit:twitter-alt" color="white" width="60" height="60" />
+                        <Icon icon="la:facebook" color="white"  />
+                        <Icon icon="bi:instagram" color="white"  />
+                        <Icon icon="ph:tiktok-logo-thin" color="white" />
+                        <Icon icon="uit:twitter-alt" color="white"  />
                     </div>
                     <p>ou</p>
                     <form className='button_contact'> <Link to={"/contact"}> Nous contacter</Link></form>

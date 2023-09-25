@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chilanka&family=Inter:wght@300&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -100,6 +101,10 @@ body {
   justify-content: space-around;
 }
 
+.elem2 svg {
+  width: 60px;
+  height: 60px;
+}
 
 
 .elem3 {
@@ -148,3 +153,46 @@ body {
   align-self: center;
 }
 
+@media only screen and (max-width: 767px) {
+
+  .element_footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elem1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .elem1 svg {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .elem2 {
+    height: 100px;
+    
+  }
+
+  .elem3 img {
+    display: none;
+  }
+
+  .elem2 svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon svg {
+    height: 30px;
+  }
+
+  .elem3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
