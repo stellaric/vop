@@ -13,6 +13,15 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+
+.header_activity p {
+  font-family: 'Fasthand', cursive;
+  text-align: center;
+  font-size: 120px;
+  margin-bottom: -135px;
+  color: #FFF;
+}
 /* début css liste déroulante */
 
 .dropdown-menu {

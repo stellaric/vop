@@ -33,7 +33,9 @@ body {
 .onglets a:hover {
   color: #DF921E;
 }
-
+.onglets a:active{
+ color: #DF921E; 
+}
 .onglets_icon {
   display: flex;
   flex-direction: row;

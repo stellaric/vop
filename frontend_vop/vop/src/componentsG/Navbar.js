@@ -14,8 +14,7 @@ function closeNav() {
 }
  
 export default function Navbar() {
- 
-  
+
  return (
     <>
       {/*navbar*/}

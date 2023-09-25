@@ -10,7 +10,7 @@ export default function Header() {
     <header className="header_activity">
 
       <Navbar/>
-      <h1>Activités</h1> 
+      <p>Activités</p> 
 
       {/*image waves (vagues) */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
