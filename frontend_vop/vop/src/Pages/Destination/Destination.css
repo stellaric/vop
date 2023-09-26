@@ -129,7 +129,6 @@ div#All {
 .card_content {
   height: 50%;
   background-color: whitesmoke;
-  border-radius: 0 0 20px 20px;
   padding: 10px;
   text-align: center;
 }
@@ -139,4 +138,82 @@ div#All {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 25px;
+}
+.card_footer a {
+ text-decoration: none;
+ color: black;
+}
+
+@media only screen and (max-width: 767px){
+
+.header_destination {
+  height: auto;
+}
+
+
+.header_destination p {
+  font-size: 75px;
+  margin-bottom:auto;
+}
+  .mainTab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .tab {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tab button {
+    width: 66px;
+    font-size: 16px;
+    padding: 12px 16px;
+    margin: 5px;
+  }
+
+  .tabcontent-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-left: none;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 0px 12px;
+    width: 100%;
+    border-left: none;
+  }
+
+  .tabcontent.active {
+    display: block;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+
+.europe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.card img {
+  width: 260px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card {
+  width: 260px;
+  height: 382px;
+}
 }

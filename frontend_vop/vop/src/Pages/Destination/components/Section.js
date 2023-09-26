@@ -10,25 +10,33 @@ export default function Section(props){
           </div>
           <div className="card_content">
             <p>{props.description1} </p>
-            <Link to={props.lien}>Voir </Link>
+          </div>
+          <div className="card_footer">
+           <button><Link to={props.lien}>Voir plus</Link></button>
           </div>
         </div>
+
         <div className="card">
           <div className="card_img">
           <img src={props.image2} alt="" />
           </div>
           <div className="card_content">
             <p>{props.description2}</p>
-            <Link to={props.lien}>Voir </Link>
+          </div>
+          <div className="card_footer">
+           <button><Link to={props.lien2}>Voir plus</Link></button>
           </div>
         </div>
+
         <div className="card">
           <div className="card_img">
           <img src={props.image3} alt="" />
           </div>
           <div className="card_content">
             <p>{props.description3} </p>
-            <Link to={props.lien}>Voir </Link>
+          </div>
+          <div className="card_footer">
+           <button><Link to={props.lien3}>Voir plus</Link></button>
           </div>
         </div>
       </section>

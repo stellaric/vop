@@ -95,12 +95,13 @@ export default function MainDestination (){
                         {category.id === "europe" && <Section
                         image1={italie1}
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
-                        lien="/voyage?cName=Italie"
+                        lien="/voyage?cName=italie"
                         image2={greece1}
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
-                        lien="/voyage?cName=grece"
+                        lien2="/voyage?cName=grece"
                         image3={finland1}
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        lien3="/voyage?cName=finland"
                         /> }
                         {/*----section Asie----*/}
                         {category.id === "asie"&& <Section

@@ -1,9 +1,8 @@
 import logo from "../media/img/logo_vop.png";
 import { Link } from "react-router-dom";
-import React, { useState }  from "react";
+import React,{useEffect}  from "react";
 import "../App.css";
 import "../mobile.css";
-import DropdownActivite from "../Pages/Activity/components/DropdownActivite";
 
 
 function openNav() {
@@ -13,13 +12,10 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-
-
+ 
 export default function Navbar() {
 
-  //ajoux de dropdown sur activité
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-  return (
+ return (
     <>
       {/*navbar*/}
     <nav className="navbar">
@@ -34,10 +30,36 @@ export default function Navbar() {
           <Link to={"/vol"}>Vols</Link>
           <Link to={"/hotel"}>Hôtels</Link>
           <Link to={"/destination"}>Destinations</Link>
-          {/* // quand on click on nevois a la fonction qui permet de'afficher la liste déroulante si on fait rien rien ne s'affiche */}
-          <Link to={"/activite"} onClick={() => setDropdownVisible(!dropdownVisible)}>
-            Activités
-          </Link>
+         <div className="dropdown">
+         <Link to={"/activite"} >Activités</Link>
+         <div className="dropdown-content">
+            <div>
+              <h4>Europe</h4>
+          <a href="#">Italie</a>
+          <a href="#">Gréce</a>
+          <a href="#">Espagne</a>
+          </div>
+          <div>
+          <h4>Asie</h4>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          </div>
+          <div>
+          <h4>Amérique</h4>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          </div>
+          <div>
+          <h4>Afrique</h4>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          </div>
+          
+        </div>
+      </div>
           </div>
 
         <div className="onglets_icon">  
@@ -74,14 +96,25 @@ export default function Navbar() {
              <Link to={"/vol"}>Vols</Link>
           <Link to={"/hotel"}>Hôtels</Link>
           <Link to={"/destination"}>Destinations</Link>
+          <div className="dropdown">
           <Link to={"/activite"}>Activités</Link>
+          <div className="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+          <div className="flag_mobile">
+            <span className="iconify" data-icon="emojione-v1:flag-for-france" />
+            <span className="iconify" data-icon="emojione-v1:flag-for-united-kingdom" />
+          </div>
+
           </div>
         </div>
         </div>
       </nav>
     {/* Afficher le dropdown s'il est visible */}
-      {dropdownVisible && <DropdownActivite />}
-
+    
 </>
   );
 }

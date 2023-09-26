@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chilanka&family=Inter:wght@300&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -33,7 +34,9 @@ body {
 .onglets a:hover {
   color: #DF921E;
 }
-
+.onglets a:active{
+ color: #DF921E; 
+}
 .onglets_icon {
   display: flex;
   flex-direction: row;
@@ -49,17 +52,77 @@ body {
 
 .icon_auth a {
   color: black;
+  font-size: xx-large;
 }
 
 
 .menu_mobile{
   display: none;
 }
+/**/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtn {
+	background:none;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+    font-family: 'Chilanka', cursive;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: #DF921E;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: white;
+  font-weight: 600;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  margin-top: 1px;
+  width: 100%;
+  flex-direction: row;
+  left: 0;
+  justify-content: space-around;
+  background: rgb(248 200 128 / 87%);
+  padding-bottom: 35px;
+  color: white;
+  padding-top: 35px;
+}
 
 /**/
-
-
-
 .footer {
   background-color: rgba(248, 200, 128, 0.85);
   width: 100%;
@@ -100,6 +163,10 @@ body {
   justify-content: space-around;
 }
 
+.elem2 svg {
+  width: 60px;
+  height: 60px;
+}
 
 
 .elem3 {
@@ -127,6 +194,8 @@ body {
   max-width: 150px;
   width: 100%;
   align-self: center;
+  filter: opacity(0.5);
+  border-radius: 22px;
 }
 
 
@@ -148,4 +217,46 @@ body {
   align-self: center;
 }
 
+@media only screen and (max-width: 767px) {
 
+  .element_footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elem1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .elem1 svg {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .elem2 {
+    height: 100px;
+    
+  }
+
+  .elem3 img {
+    display: none;
+  }
+
+  .elem2 svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon svg {
+    height: 30px;
+  }
+
+  .elem3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+}

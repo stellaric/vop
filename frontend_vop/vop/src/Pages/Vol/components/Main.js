@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Section from "./Section";
 import "../Vol.css";
-import italie1 from "../../../media/images/italie1.jpg";
+import vol_italie from "../../../media/img/vol_italie.jpg";
 import greece1 from "../../../media/images/greece1.jpg";
 import finland1 from "../../../media/images/finland1.jpg";
 import turquie1 from "../../../media/images/turquie1.jpg";
@@ -85,21 +85,25 @@ export default function Main (){
                     {(activeTab === "All" || activeTab === category.id) && (
                       <div> {/*----section Europe----*/}
                         {category.id === "Europe" && <Section
-                        image1={italie1}
-                        titre1="Italie"
+                        image1={vol_italie}
+                        titre1="Venise"
                         description1="L'Italie est un pays riche en contrastes , de ses villes historiques à ses magnifiques côtes méditéranéennes."
-                        prix1="240€"
+                        compagnie1=""
+                        prix1="240€/personne"
                         lien1="https://www.kombo.co/fr/app/round/1/1/202/2023-10-23/2023-10-27/Paris/Rome/inward/10yue0xyu0bw70s2ztjc0s2zz3c0010907r6/10xyu0yue0cul0s36sgo0s36yhc0010909wy/recap/passengers"
+                       
                         image2={greece1}
                         titre2="Grece"
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
-                         prix2="450€"
+                        compagnie2=""
+                        prix2="450€"
                          lien2="https://www.kombo.co/fr/app/round/1/1/202/2023-10-23/2023-10-27/Paris/Rome/inward/10yue0xyu0bw70s2ztjc0s2zz3c0010907r6/10xyu0yue0cul0s36sgo0s36yhc0010909wy/recap/passengers"
                        
                         image3={finland1}
                         titre3="Finlande"
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
-                         prix3="620€"
+                        compagnie3=""
+                        prix3="620€"
                         /> }
 
 

@@ -1,5 +1,9 @@
 @media only screen and (max-width: 767px) {
 /*navbar*/
+
+.logo {
+    margin-right: 155px;
+}
 .logo img {
     width: 100px;
     height: 100px;
@@ -11,8 +15,7 @@
 
 
 .flag {
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 
 .flag svg {
@@ -23,9 +26,69 @@
 
 .burger {
     color: black;
+    font-size: xx-large ;
+    margin-right: 25px;
 }
 .menu_mobile{
     display: flex;
 }
-/**/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #be6b16cc;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 6%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    font-family: "Inter", sans-serif;
+    transition: 0.3s;
+    font-family: 'Chilanka';
+    font-weight: 600;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    font-size: 40px;
+    top: 2%;
+    right: 3px;
+    font-weight: 700;
+    font-family: 'Inter';
+  }
+
+  .flag_mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 31px;
+  }
+
+  .flag_mobile svg {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}  
+
 }

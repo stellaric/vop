@@ -16,18 +16,18 @@ export default function DetailsVoyage(props) {
                 <img
                     src={props.myImg1}
                     alt="image1"
-                    style={{ maxWidth: '765px', height: '634px', marginRight: '10px' }}
+                   
                 />
                 <div className="miniPhotos">
                 <img
                     src={props.myImg2}
                     alt="image2"
-                    style={{ maxWidth: '565px', height: '434px', marginRight: '10px' }}
+                    style={{ maxWidth: '465px', height: '334px', marginRight: '10px' }}
                 />
                 <img
                     src={props.myImg3}
                     alt="image3"
-                    style={{ maxWidth: '565px', height: '434px' }}
+                    style={{ maxWidth: '465px', height: '334px' }}
                 />
                 </div>
             </div>
@@ -36,7 +36,7 @@ export default function DetailsVoyage(props) {
 
             <div className="details">
                 <div className="date"><Icon icon="uiw:date" color="#df921e" width="50"/> <p>{props.date}</p> </div>
-                <div className="dep"><Icon icon="pepicons-pencil:airplane-circle-filled" color="#df921e" width="50" /><p>{props.départ}</p></div>
+                <div className="dep"><Icon icon="pepicons-pencil:airplane-circle-filled" color="#df921e" width="50" /><p>{props.depart}</p></div>
                 <p>90€ / personne</p>
 
             </div>
@@ -45,9 +45,9 @@ export default function DetailsVoyage(props) {
                 <p>{props.paragraphe}</p>
 
             </div>
-
+                <div className="reservaion">
                 <form className="resa"> <p>Reservation</p></form>
-
+                </div>
         </div>
     );
 }

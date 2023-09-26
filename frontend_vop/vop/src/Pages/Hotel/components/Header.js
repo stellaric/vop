@@ -8,7 +8,7 @@ export default function Header() {
     <header className="header_hotel">
 
 <Navbar/>
-
+<p>Hotels</p>
 
 
       {/*image waves (vagues) */}
