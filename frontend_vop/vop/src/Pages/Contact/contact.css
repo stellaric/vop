@@ -171,6 +171,7 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 362px;
+    height: 600px;
 }
 
 
@@ -189,6 +190,15 @@ textarea {
 
 .contact_form button {
     width: 200px;
+    align-self: center;
+}
+
+.label_message,
+.lab_email,
+.label_sujet{
+    display: flex;
+    flex-direction: column;
+    margin: 23px;
 }
 
 }

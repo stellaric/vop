@@ -80,11 +80,13 @@
     font-family: Chilanka;
 }
 
-.reservation{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin: 50px;
+.reservation {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin: 10px;
+    
 }
 
 .resa {

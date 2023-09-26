@@ -105,7 +105,7 @@ div#All {
 
 /*____section_____*/
 
-.card  {
+.card_destination  {
   width: 360px;
   height: 482px;
   
@@ -120,7 +120,7 @@ div#All {
   background-color: transparent;
 }
 
-.card img {
+.card_destination img {
   width: 360px;
   border-radius: 20px 20px 0 0;
   
@@ -139,9 +139,28 @@ div#All {
   align-items: center;
   margin-bottom: 25px;
 }
-.card_footer a {
+
+.card_footer_destination{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.card_footer_destination button {
+  border-radius: 0px 0px 22px 22px;
+  border: 0px;
+  padding: 20px;
+  background-color: #df921e;
+  text-transform: uppercase;
+  font-family: 'Chilanka';
+  font-weight: 600;
+  color: white;
+}
+.card_footer_destination a {
  text-decoration: none;
  color: black;
+ 
 }
 
 @media only screen and (max-width: 767px){
