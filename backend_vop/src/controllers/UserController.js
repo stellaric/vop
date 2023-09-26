@@ -1,27 +1,49 @@
 // les controlleurs en générales gerent la logique de l'application
 
-import { userModel } from "../models/userModel.js";
+const models = require("../../models")
+
+module.exports.createUsers = async (req, res) => {
 
 
-//obtenir tous la liste de tpous les  utilisateurs ;
-export const getUsers = async (req, res) => {
+};
+module.exports.getUsers = async (req, res) => {
     try {
-        // on selection tous sauf le mo de passe
-        const users = await userModel.find({})
-        select('-password')
-        res.status(200).json( users)
+
+        let users = await models.User.findAll();
+        res.status(200).json({
+            data: users
+        })
     } catch (error) {
         console.log(error)
     }
 
 };
+module.exports.getUser = async (req, res) => {
+    const { id } = req.params
+    try {
+        const user = await models.User.findOne({
+            where: {
+                id: id
+            },
+            includes: [
+                {
+                    model: models.Reservation,
+                    as: 'reservations'
+                }
+            ]
+        })
+        res.status(201).json({
+            user
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
 
-
-//suppression d'utilisateurs.
-export const deleteUsers = async (req, res) => {
+module.exports.deleteUsers = async (req, res) => {
 
 };
-//mettre à jour le rôle des utilisateurs ;
-export const putUsers = async (req, res) => {
+
+module.exports.putUsers = async (req, res) => {
 
 }
