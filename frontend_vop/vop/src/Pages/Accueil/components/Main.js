@@ -63,22 +63,22 @@ export default function Main() {
           <div className="card_team_content">
             <img src={jade} alt="img_jade" />
             <h3>Jade</h3>
-            <p>ceici est un texte</p>
+            <p>Jade, notre exploratrice passionnée, déniche les destinations les plus captivantes et insolites, transformant chaque voyage en une aventure unique.</p>
           </div>
           <div className="card_team_content">
             <img src={martinaise} alt="img_martinaise" />
             <h3>Martinaise</h3>
-            <p>ceici est un texte</p>
+            <p>Martinaise crée des itinéraires exceptionnels, mêlant art et science pour que chaque étape de votre voyage soit une expérience mémorable.</p>
           </div>
           <div className="card_team_content">
             <img src={stella} alt="img_stella" />
             <h3>Stella</h3>
-            <p>ceici est un texte</p>
+            <p>Stella établit des liens profonds avec chaque client, personnalisant chaque voyage pour le rendre authentique et inoubliable, de la réservation aux conseils spéciaux.</p>
           </div>
         </div>
       </section>
 
-      {/*section : temoignage*/}
+      {/*section : temoignage
       <section className="temoignage">
         <h2>témoignage</h2>
         <div className="card_temoignage">
@@ -88,6 +88,7 @@ export default function Main() {
           </div>
         </div>
       </section>
+  */}
     </main>
   );
 }

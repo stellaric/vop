@@ -1,18 +1,20 @@
 // les routes en générales  definnissent le chemin de la page qu'on souhaite afficher sur le navigateur
-
-import { deleteUsers, getUsers, putUsers } from "../controllers/UserController.js";
-import { signIn, register, logout } from "../controllers/auth.controller.js";
+const authController = require("../controllers/auth.controller");
 //on importe exprsee
-import express from "express";
-const router = express.Router();
+const UserController = require("../controllers/UserController")
+const router = require("express").Router();
+
+const checkAuth = require("../middlewares/auth.middlewares")
+// const router = express
 //authentification
-router.post("/register", register);
-router.post("/logn", signIn);
-router.get("/logout", logout);
+router.post("/register", authController.register);
+router.post("/login", authController.signIn);
+router.get("/logout", authController.logout);
 
-router.get("/", getUsers);
-router.delete("/", deleteUsers);
-router.put("/", putUsers);
+router.get("/",checkAuth.checkAuth, UserController.getUsers);
+router.get("/:id",UserController.getUser)
+router.delete("/", UserController.deleteUsers);
+router.put("/", UserController.putUsers);
 
-// on renome la route pour ne pas avoir de compliit
-export { router as userRoutes };
+
+module.exports = router;
