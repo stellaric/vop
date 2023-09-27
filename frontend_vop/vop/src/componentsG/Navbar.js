@@ -24,6 +24,7 @@ export default function Navbar() {
           <Link to={"/"}>
             <img src={logo} alt="logo_navbar" width="150px" />
           </Link>
+           {/* dropdown  ORDI*/}
         </div>
 
         <div className="onglets">
@@ -78,7 +79,7 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-
+{/* FIN dropdown ordi */}
 
     <div className="menu_mobile">
         <span className="burger" onClick={openNav}>
