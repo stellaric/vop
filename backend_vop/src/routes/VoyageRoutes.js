@@ -8,6 +8,10 @@ const adminOnly = require("../middlewares/adminOnly.middleware")
 /*********ROUTES HOTELS */
 router.post("/hotel", upload, voyageController.createHotel)
 router.get("/hotel/:id", voyageController.getHotel)
+<<<<<<< HEAD
+=======
+router.get("/hotel",voyageController.getHotels)
+>>>>>>> 56b720538d4ec93e374de593b3e8fc19349ce8ec
 /*********ROUTES DESTINATIONS */
 router.post("/destination", voyageController.creaDestination)
 router.get("/destination", voyageController.getDestinations)

@@ -10,7 +10,7 @@ export default function Main() {
     // card
     return (
         <main className="text">
-            <h2>Activités</h2>
+       
             <section className="activity_accueil">
                 <div className="card_activite">
                     <img src={active2} alt="Canoë" />

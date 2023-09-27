@@ -9,12 +9,12 @@ const checkAuth = require("../middlewares/auth.middlewares")
 //authentification
 router.post("/register", authController.register);
 router.post("/login", authController.signIn);
-router.get("/logout", authController.logout);
+// router.get("/logout", authController.logout);
 
 router.get("/",checkAuth.checkAuth, UserController.getUsers);
 router.get("/:id",UserController.getUser)
-router.delete("/", UserController.deleteUsers);
-router.put("/", UserController.putUsers);
+// router.delete("/", UserController.deleteUsers);
+// router.put("/", UserController.putUsers);
 
 
 module.exports = router;
