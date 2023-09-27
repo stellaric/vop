@@ -1,86 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('../../media/img1/inscription.jpg'); /* Remplacez 'votre-image.jpg' par le chemin de votre image de fond */
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .container {
-    background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan gris semi-transparent */
-    border: 1px solid #ccc; /* Cadre gris autour du formulaire */
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: #fff; /* Couleur du texte en blanc */
-  }
-  
-  .container h1 {
-    text-align: center;
-    color: #fff; /* Couleur du texte en blanc */
-  }
-  
-  .container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f5f5f5; /* Arrière-plan gris pour le formulaire */
-    padding: 20px;
-    border-radius: 5px;
-    color: #fff; /* Couleur du texte en blanc */
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../media/img1/inscription.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;}
 
-  .container form div {
-    margin-bottom: 15px;
-  }
+/* Style des cases à cocher et des boutons radio */
+form input[type="checkbox"],
+form input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+/* Style du formulaire */
+form {
+  position: relative;
+  background-color: #f0f0f0;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px; 
+  box-sizing: border-box; 
+  margin-left: 15px;
+}
+
+/* Style des conteneurs de champs */
+form div {
+  margin-bottom: 15px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0; 
+ /* Réinitialisez la marge à zéro pour éviter le débordement */
+}
+
+/* Style des labels */
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
   
-  .container form label {
-    font-weight: bold;
-  }
+}
+
+/* Style des champs de texte, mot de passe et e-mail */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  width: 80%;
   
-  .container form input[type="text"],
-  .container form input[type="email"],
-  .container form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 10px; /* Espacement entre les champs */
-    color: #000; /* Couleur du texte en noir */
-  }
   
-  .container form input[type="radio"] {
-    margin-right: 5px;
-  }
+}
+
+/* Style pour afficher "Nom" et "Prénom" côte à côte */
+form div.name-inputs {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
   
-  .container form label input[type="radio"] {
-    margin-right: 5px;
-  }
+}
+form button:hover {
+  background-color: #0056b3; 
+  padding: none;
   
-  .container form label:last-child {
-    margin-bottom: 0;
-  }
-  
-  .container form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-  }
-  
-  .container form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .container form label input[type="checkbox"] {
-    margin-right: 5px;
-  }
+}
+

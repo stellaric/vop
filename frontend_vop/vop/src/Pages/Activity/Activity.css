@@ -1,6 +1,6 @@
 hedear css
 .header_activity {
-  background: url("../../media/img1/active1.jpeg");
+   background: url("../../media/img1/active1.jpeg"); 
   top: 0;
   left: 0;
   width: 100%;
@@ -55,6 +55,7 @@ hedear css
 }
 .text {
   text-align: center;
+  background-color: white;
 } /* Fin css liste déroulante */
 
 /*css  pour les  cards */
