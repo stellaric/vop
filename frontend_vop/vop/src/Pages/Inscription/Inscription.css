@@ -1,11 +1,11 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-image: url("../../media/img1/inscription.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;}
+  background-position: center;} */
 
 /* Style des cases à cocher et des boutons radio */
 form input[type="checkbox"],
