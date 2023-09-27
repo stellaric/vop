@@ -1,4 +1,4 @@
-/* hedear css */
+hedear css
 .header_activity {
   background: url("../../media/img1/active1.jpeg");
   top: 0;
@@ -28,8 +28,8 @@
   background-color: #df921e;
   display: flex; /* Afficher les éléments en ligne */
   top: 300px;
-  margin-bottom: 500px;
-  justify-content: space-around;
+  margin-bottom: 100px;
+  justify-content: space-around
 }
 
 /* Style pour chaque continent */
@@ -58,6 +58,7 @@
 } /* Fin css liste déroulante */
 
 /*css  pour les  cards */
+
 h1{
   text-align: center;
   margin-bottom: 300px;
@@ -66,7 +67,7 @@ h1{
   font-weight: bold;
 
 }
-.card {
+.card_activite {
   position: relative;
   width: 300px;
   height: 200px;
@@ -79,12 +80,12 @@ h1{
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover {
+.card_activite:hover {
   transform: rotate(-5deg) scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card__content {
+.card__infos {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -98,7 +99,8 @@ h1{
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover .card__content {
+
+.card_activite:hover .card__infos {
   transform: translate(-50%, -50%) rotate(0deg);
   opacity: 1;
 }
@@ -119,3 +121,35 @@ h1{
   justify-content: space-around;
   margin: 50px 0 100px 0;
 }
+
+.section.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Espace au-dessus du composant */
+}
+
+/* Style des cartes */
+.selected-country {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px; /* Espace entre les cartes */
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.selected-country h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.selected-country img {
+  max-width: 100%; 
+  max-height: 200px; 
+}
+
+
+
+

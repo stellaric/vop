@@ -94,22 +94,28 @@ export default function MainDestination (){
                       <div> {/*----section Europe----*/}
                         {category.id === "europe" && <Section
                         image1={italie1}
-                        description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        card_titre1="Italie"
+                        description1="L'Italie constitue sans l'ombre d'un doute l'une des destinations les plus célèbres et appréciées du monde entier. La célèbre botte d'Europe du Sud abrite en effet d'incroyables trésors.  "
                         lien="/voyage?cName=italie"
                         image2={greece1}
-                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        card_titre2="Grece"
+                        description2="Destination phare de la Méditerranée, la Grèce se démarque par une histoire riche et complexe, des paysages côtiers à couper le souffle et une culture singulière.   "
                         lien2="/voyage?cName=grece"
                         image3={finland1}
-                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        card_titre3="Finland"
+                        description3="Située entre mer Adriatique et montagne, la Finlande se veut une destination nature par excellence. Les sommets enneigés promettent sports de glisse et le plein de sensations.  "
                         lien3="/voyage?cName=finland"
                         /> }
                         {/*----section Asie----*/}
                         {category.id === "asie"&& <Section
                         image1={turquie1}
+                        card_titre1="Turquie"
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         image2={japon1}
+                        card_titre2="Japon"
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         image3={malaysia1}
+                        card_titre3="Malaysia"
                         description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         /> }
                         
@@ -138,6 +144,7 @@ export default function MainDestination (){
                       <div>
                         {category.id === "europe" && <Section
                         image1={italie1}
+                        card_titre1="Italie"
                         description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
                         image2={greece1}
                         description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "

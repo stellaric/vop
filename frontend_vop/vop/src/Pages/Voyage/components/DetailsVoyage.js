@@ -35,9 +35,9 @@ export default function DetailsVoyage(props) {
            
 
             <div className="details">
-                <div className="date"><Icon icon="uiw:date" color="#df921e" width="50"/> <p>{props.date}</p> </div>
-                <div className="dep"><Icon icon="pepicons-pencil:airplane-circle-filled" color="#df921e" width="50" /><p>{props.depart}</p></div>
-                <p>90€ / personne</p>
+                <div className="date"><Icon icon="gis:earth-euro-africa" color="#334232" width="50" /> <p>{props.date}</p> </div>
+                <div className="dep"><Icon icon="emojione-monotone:airplane" color="#334232" width="50" /><p>{props.depart}</p></div>
+                
 
             </div>
 
@@ -45,9 +45,7 @@ export default function DetailsVoyage(props) {
                 <p>{props.paragraphe}</p>
 
             </div>
-                <div className="reservaion">
-                <form className="resa"> <p>Reservation</p></form>
-                </div>
+               
         </div>
     );
 }

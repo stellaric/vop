@@ -1,3 +1,4 @@
+
 /* css container */
 .moncontainer {
   height: 100vh;
@@ -66,4 +67,19 @@ h1 {
   border-radius: 15px;
   border-style: none;
   padding: 10px;
+}
+
+/* responssive */
+@media (max-width: 390px) {
+  .moncontainer {
+    padding: 10px;
+  }
+
+  .container_bloc_droit {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
 }

@@ -9,6 +9,7 @@ export default function Section(props){
             <img src={props.image1} alt="" />
           </div>
           <div className="card_content">
+            <p>{props.card_titre1}</p>
             <p>{props.description1} </p>
           </div>
           <div className="card_footer_destination">
@@ -21,6 +22,7 @@ export default function Section(props){
           <img src={props.image2} alt="" />
           </div>
           <div className="card_content">
+          <p>{props.card_titre2}</p>
             <p>{props.description2}</p>
           </div>
           <div className="card_footer_destination">
@@ -33,6 +35,7 @@ export default function Section(props){
           <img src={props.image3} alt="" />
           </div>
           <div className="card_content">
+          <p>{props.card_titre3}</p>
             <p>{props.description3} </p>
           </div>
           <div className="card_footer_destination">

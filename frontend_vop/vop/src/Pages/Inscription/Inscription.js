@@ -1,13 +1,14 @@
 
 import React from 'react';
 import { Link } from "react-router-dom";
-import Header from './components/Header';
-import Main from './components/Main';
+
+import Main from "./components/MainInscription"
 import Footer from '../../componentsG/Footer';
-export default function Activity() {
+import Navbar from '../../componentsG/Navbar';
+export default function Inscription() {
     return (
         <>
-       <Header/>
+       <Navbar/>
        <Main/>
        <Footer/>
    </>

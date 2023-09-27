@@ -40,7 +40,8 @@
     justify-content: flex-start;
     width: 100%;
 }
- .photos img {
+
+.photos img {
     max-width: 765px;
     height: 634px;
     margin-right: 10px;
@@ -81,12 +82,12 @@
 }
 
 .reservation {
-    
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        margin: 10px;
-    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
 }
 
 .resa {
@@ -98,7 +99,7 @@
     text-align: center;
     color: #FFF;
     align-self: flex-end;
-    margin: 1Opx;
+    margin: 20px
 }
 
 @media only screen and (max-width: 767px) {
@@ -138,7 +139,8 @@
     .details svg {
         width: 30px;
     }
-    .reservation{
+
+    .reservation {
         display: flex;
         flex-direction: row;
         justify-content: end;
