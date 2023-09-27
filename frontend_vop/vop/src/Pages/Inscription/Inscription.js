@@ -8,6 +8,7 @@ import Navbar from '../../componentsG/Navbar';
 export default function Inscription() {
     return (
         <>
+    <header/>
        <Navbar/>
        <Main/>
        <Footer/>
