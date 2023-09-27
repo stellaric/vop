@@ -35,7 +35,7 @@ export default function Section(props) {
 
   return (
     <>
-      <section className="container">
+      <section className="container_vol">
         <div className="card_vol">
           <div className="card_vol_img">
             <img src={props.image1} alt="" />
