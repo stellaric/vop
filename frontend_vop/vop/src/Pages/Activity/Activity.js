@@ -10,8 +10,6 @@ export default function Activity() {
        <Header/>
        <Main/>
        <Footer/>
-
-   
    </>
     );
 }

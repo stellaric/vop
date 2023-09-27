@@ -5,11 +5,13 @@ import Hotel from './Pages/Hotel/Hotel';
 import Destination from'./Pages/Destination/Destination'
 import Activite from'./Pages/Activity/Activity'
 import Authentification from'./Pages/Authentification/Auth'
-import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import Contact from './Pages/Contact/Contact';
 import Voyage from './Pages/Voyage/Voyages';
 import Profil from "./Pages/Profil/components/Profil";
 import './App.css';
+import Connexion from "./Pages/Connexion/Connexion"
+import Inscription from "./Pages/Inscription/Inscription"
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 
 
 
@@ -28,7 +30,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/voyage" element={<Voyage />} />
           <Route path="/Profil" element={<Profil />} />
-          
+          <Route path="/Connexion" element={<Connexion />} />
+          <Route path="/Inscription" element={<Inscription />} />
 
           </Routes>
         </Router>

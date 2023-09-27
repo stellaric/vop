@@ -8,6 +8,8 @@ export default function Auth() {
 
    <p>Ceci est la page authentification </p>
    <Link to={"/"}>Retour à Accueil</Link> 
+
+
    </>
     );
 }
