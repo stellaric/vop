@@ -10,6 +10,8 @@ export default function Header() {
     <header className="header_activity">
 
       <Navbar/>
+      
+      
       <p>Activités</p> 
 
       {/*image waves (vagues) */}
