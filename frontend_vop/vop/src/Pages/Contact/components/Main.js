@@ -111,6 +111,18 @@ export default function Main() {
                 </div>
 
             </container>
+  {/* Fenêtre modale de contact */}
+  {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal-news">
+            <div className="modal-content_news">
+              <h3>Message envoyé</h3>
+              <p>Votre message a été envoyé au service client VOP.</p>
+              <button onClick={() => setIsModalOpen(false)}>Fermer</button>
+            </div>
+          </div>
+        </div>
+      )}
 
         </div>
 
