@@ -22,6 +22,7 @@ module.exports.register = async (req, res) => {
             message: "tous les champs sont obligatoires ! veuillez bien les remplir"
         })
     }
+    console.log(req.body)
     try {
         //  j'appel mon model et sur le model je lui passe les données récupére du corps de la requette
         isAdmin = false
@@ -33,6 +34,7 @@ module.exports.register = async (req, res) => {
         })
 
     } catch (error) {
+        console.log(error)
         const errMessage = error.errors[0].message
         res.status(404).json({
             message: "utilisateur n'a pas été créé",

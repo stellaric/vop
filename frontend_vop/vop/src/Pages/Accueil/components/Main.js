@@ -58,6 +58,7 @@ export default function Main() {
 
       {/*section : team */}
       <section className="team">
+       
         <h2>Notre Team </h2>
         <div className="card_team">
           <div className="card_team_content">
@@ -76,6 +77,7 @@ export default function Main() {
             <p>Stella établit des liens profonds avec chaque client, personnalisant chaque voyage pour le rendre authentique et inoubliable, de la réservation aux conseils spéciaux.</p>
           </div>
         </div>
+      
       </section>
 
       {/*section : temoignage

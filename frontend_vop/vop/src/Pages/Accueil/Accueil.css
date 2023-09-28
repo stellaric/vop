@@ -212,7 +212,7 @@
 
 /*section : team */
 .team {
-  background: url(../../media/img/fd_destination.png);
+  background: url(../../media/img/fd_blob.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -238,7 +238,10 @@
   align-items: center;
   font-family: "Chilanka", cursive;
 }
-
+.card_team_content p {
+    width: 55%;
+    text-align: center;
+}
 /*section : temoignage */
 .temoignage {
   background: url(../../media/img/fd_temoignage.jpg);

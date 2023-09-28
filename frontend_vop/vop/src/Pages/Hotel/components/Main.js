@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Section from "./Section";
 import "../Hotel.css";
 import hotel_italie from "../../../media/img/vol_italie.jpg";
@@ -13,10 +13,19 @@ import senegal1 from "../../../media/images/senegal1.jpg";
 import newyork from "../../../media/img/ny.jpg"
 import bhills from "../../../media/img/bhills.jpg"
 import californie from "../../../media/img/californie.jpg"
+import { getHotels } from "../../../services/voyage";
 
 
 export default function Main (){
-    
+   {/* useEffect(()=>{
+      function hotel(){
+ const resultat = await getHotels()
+      console.log(resultat)
+      }
+     
+    },[])
+*/}
+
         const categories = [
 
             {

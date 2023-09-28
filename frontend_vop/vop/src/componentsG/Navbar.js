@@ -31,36 +31,8 @@ export default function Navbar() {
           <Link to={"/vol"}>Vols</Link>
           <Link to={"/hotel"}>Hôtels</Link>
           <Link to={"/destination"}>Destinations</Link>
-         <div className="dropdown">
          <Link to={"/activite"} >Activités</Link>
-         <div className="dropdown-content">
-            <div>
-              <h4>Europe</h4>
-          <a href="#">Italie</a>
-          <a href="#">Gréce</a>
-          <a href="#">Espagne</a>
-          </div>
-          <div>
-          <h4>Asie</h4>
-          <a href="#">Link 1</a>
-          <a href="#">Link 1</a>
-          <a href="#">Link 1</a>
-          </div>
-          <div>
-          <h4>Amérique</h4>
-          <a href="#">Link 1</a>
-          <a href="#">Link 1</a>
-          <a href="#">Link 1</a>
-          </div>
-          <div>
-          <h4>Afrique</h4>
-          <a href="#">Link 1</a>
-          <a href="#">Link 1</a>
-          <a href="#">Link 1</a>
-          </div>
-          
-        </div>
-      </div>
+       
           </div>
 
         <div className="onglets_icon">  
@@ -119,10 +91,3 @@ export default function Navbar() {
 </>
   );
 }
-
-
-
-
-
-
-

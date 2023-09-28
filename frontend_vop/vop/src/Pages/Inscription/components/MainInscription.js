@@ -2,18 +2,16 @@ import React, { useState } from "react";
 import "../Inscription.css";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import { login } from "../../../services/user";
+
 
 function Inscription() {
-  const [sexe, setSexe] = useState("Mme");
-  const [nom, setNom] = useState("");
-  const [prenom, setPrenom] = useState("");
-  const [email, setEmail] = useState("");
-  const [motDePasse, setMotDePasse] = useState("");
-  const [confirmationMotDePasse, setConfirmationMotDePasse] = useState("");
-  const [acceptePolitique, setAcceptePolitique] = useState(false);
   const [activeTab, setActiveTab] = useState("inscription"); // Default to the "Inscription" tab
   const [ConfirmPassWord, setConfirmPassWord] = useState();
   const [newUser, setNewUser] = useState({});
+  const [loginUser,setLoginUser]=useState({});
+
+
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -42,6 +40,7 @@ function Inscription() {
 
     // Add your logic for submitting the registration or login form here, e.g., API request or client-side validation.
   };
+
   // fonction pour récupere la saisie de l'utilisateur
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -51,6 +50,20 @@ function Inscription() {
     newUserCopy[name] = value;
     setNewUser(newUserCopy);
   };
+  console.log(newUser)
+  const handleLogin = (e) => {
+    const {name,value} = e.target
+    const LoginCopy ={ ...loginUser}
+   LoginCopy[name] = value 
+    setLoginUser(LoginCopy)
+  }
+
+ const handleSubmitLogin = async (e) =>{
+  e.preventDefault()
+ const resultat = await login(loginUser.email,loginUser.password)
+ console.log(resultat)
+ }
+
 
   return (
     <div>
@@ -130,7 +143,7 @@ function Inscription() {
               <div>
                 <label htmlFor="email">Email</label>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   id="email"
                   onChange={handleInput}
@@ -152,16 +165,19 @@ function Inscription() {
 
             <div>
               <div>
-                <label htmlFor="password_confirmation">
+               <label htmlFor="password_confirmation">
                   Confirmation de mot de passe
                 </label>
+                {/*} 
                 <input
                   type="password"
                   name="password_confirmation"
                   id="password_confirmation"
+          *
                   // recupéré ce que la personne a saisit pour comparere a ppres avec le mot de passe saisit
                   onChange={(e) => confirmationMotDePasse(e.target.value)}
                 />
+          */}
               </div>
             </div>
 
@@ -189,15 +205,16 @@ function Inscription() {
               className={
                 activeTab === "connexion" ? "tabcontent active" : "tabcontent"
               }
-              onSubmit={handleSubmit}
+              onSubmit={handleSubmitLogin}
             >
               <div>
                 <div>
                   <label htmlFor="emailConnexion">Email</label>
                   <input
                     type="text"
-                    name="emailConnexion"
+                    name="email"
                     id="emailConnexion"
+                    onChange={handleLogin}
                   />
                 </div>
               </div>
@@ -207,8 +224,9 @@ function Inscription() {
                   <label htmlFor="passwordConnexion">Mot de passe</label>
                   <input
                     type="password"
-                    name="passwordConnexion"
+                    name="password"
                     id="passwordConnexion"
+                    onChange={handleLogin}
                   />
                 </div>
               </div>
