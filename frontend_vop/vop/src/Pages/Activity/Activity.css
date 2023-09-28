@@ -1,26 +1,25 @@
-hedear css
-.header_activity {
-   background: url("../../media/img1/active1.jpeg"); 
+ .header_activity { 
+   background: url("../../media/img1/active1.jpeg");  
   top: 0;
   left: 0;
   width: 100%;
   height: 960px;
-  z-index: -1;
+   z-index: -1; 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
-
 .header_activity p {
-  font-family: 'Fasthand', cursive;
+  font-family: "Fasthand", cursive;
   text-align: center;
   font-size: 120px;
   margin-bottom: -135px;
-  color: #FFF;
+  color: #fff;
 }
 /* début css liste déroulante */
 
@@ -29,7 +28,7 @@ hedear css
   display: flex; /* Afficher les éléments en ligne */
   top: 300px;
   margin-bottom: 100px;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 /* Style pour chaque continent */
@@ -60,13 +59,12 @@ hedear css
 
 /*css  pour les  cards */
 
-h1{
+h1 {
   text-align: center;
   margin-bottom: 300px;
   font-size: 50px;
-  color:red;
+  color: red;
   font-weight: bold;
-
 }
 .card_activite {
   position: relative;
@@ -99,7 +97,6 @@ h1{
   opacity: 0;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
 
 .card_activite:hover .card__infos {
   transform: translate(-50%, -50%) rotate(0deg);
@@ -147,10 +144,6 @@ h1{
 }
 
 .selected-country img {
-  max-width: 100%; 
-  max-height: 200px; 
+  max-width: 100%;
+  max-height: 200px;
 }
-
-
-
-
