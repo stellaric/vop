@@ -110,33 +110,34 @@ export default function MainDestination (){
                         {category.id === "asie"&& <Section
                         image1={turquie1}
                         card_titre1="Turquie"
-                        description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description1="La Turquie fait partie de ces rares pays à être à cheval sur deux continents différents : l'Europe et l'Asie.  "
                         image2={japon1}
                         card_titre2="Japon"
-                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description2="Aux confins de l'Orient, le Japon est un pays qui fascine les Occidentaux depuis déjà de nombreux siècles.  "
                         image3={malaysia1}
                         card_titre3="Malaysia"
-                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description3="La Malaisie est composée de deux territoires distincts : la péninsule Malaise et l’île de Bornéo, à 700km à l’est.  "
                         /> }
                         
 
                         {/*----section Amérique---*/}
                         {category.id === "amerique" && <Section
                         image1={colombia1}
-                        description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description1="Située dans la partie nord de l'Amérique du Sud, la Colombie est l'un des pays les plus connus et les plus visités de cette partie du nouveau continent.   "
                         image2={cuba2}
-                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description2="Situé dans les Antilles, juste au sud de l'Etat américain de la Floride, Cuba est une destination qui ne cesse de gagner en popularité. "
                         image3={mexico1}
-                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description3="Situé au sud des États-Unis, le Mexique est l’un de ces pays où la fête a été érigée en véritable art de vivre.  "
                         />}
                         {/*----section Afrique---*/}
                         {category.id === "afrique" && <Section
                         image1={senegal1}
-                        description1="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description1="Le Sénégal est l'un des pays africains les plus connus des Français puisqu'il s'agit de l'une des anciennes colonies de l'Hexagone où la langue de Molière est encore aujourd'hui omniprésente.  "
                         image2={cap1}
-                        description2="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description2="Le Cap Vert, ou Cabo Verde en portugais, est un archipel d’origine volcanique situé à 620 km au large du Sénégal dans l'Océan Atlantique.   "
                         image3={alg1}
-                        description3="ceci est un  paragrahcekdodozdokzdozodz ceci est un  paragrahcekdodozdokzdozodz "
+                        description3="Plus grand pays d’Afrique, l’Algérie est tellement vaste que sa diversité culturelle en est incroyable.
+                        Avec son immense désert au sud et ses grandes villes animées au nord, l’Algérie représente une destination d’aventures avant tout. "
                         />}
                       </div>
                     )}
