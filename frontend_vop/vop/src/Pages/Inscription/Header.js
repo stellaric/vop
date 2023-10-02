@@ -9,8 +9,6 @@ export default function Header() {
 
       <Navbar/>
       
-      
-
     </header>
   );
 }

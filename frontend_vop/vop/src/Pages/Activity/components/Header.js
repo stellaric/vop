@@ -4,16 +4,13 @@ import "../Activity.css";
 import DropdownActivite from './DropdownActivite';
 
 
-
 export default function Header() {
+  
 
   return (
     <header className="header_activity">
-
       <Navbar/>
-       <DropdownActivite/> 
-      
-      
+      <DropdownActivite/>
       <p>Activités</p> 
 
       {/*image waves (vagues) */}

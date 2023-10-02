@@ -37,10 +37,9 @@ function Inscription() {
           progress: undefined,
         });
       });
-      // setTimeout(() => { navigate("/login") }, 3000);
+      
     }
-
-    // Add your logic for submitting the registration or login form here, e.g., API request or client-side validation.
+    
   };
   // fonction pour récupere la saisie de l'utilisateur
   const handleInput = (e) => {
@@ -66,15 +65,14 @@ function Inscription() {
             Inscription
           </button>
 
-          <button
-            className={
+          <button className={
               activeTab === "connexion" ? "tablinks active" : "tablinks"
             }
-            onClick={() => handleTabClick("connexion")}
-          >
+            onClick={() => handleTabClick("connexion")} >
             Connexion
           </button>
         </div>
+
         <div className="form-wrapper">
           {/* formulaire inscription */}
           <form
@@ -82,9 +80,8 @@ function Inscription() {
               activeTab === "inscription" ? "tabcontent active" : "tabcontent"
             }
             onSubmit={handleSubmit}
-          >
-            {/* ... Votre code de formulaire d'inscription existant ... */}
-            <div>
+          > 
+            <div className="radio">
               <div>
                 <input
                   type="radio"
@@ -164,7 +161,6 @@ function Inscription() {
                 />
               </div>
             </div>
-
             <div>
               <input
                 type="checkbox"

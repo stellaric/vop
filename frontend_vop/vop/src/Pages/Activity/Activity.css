@@ -1,5 +1,8 @@
+ 
+ /* header */
  .header_activity { 
-   background: url("../../media/img1/active1.jpeg");  
+   background: url("../../media/img1/active1.jpeg");   
+   
   top: 0;
   left: 0;
   width: 100%;
@@ -13,6 +16,22 @@
   justify-content: space-between;
   
 }
+
+/* fin header */
+.content h1 {
+
+  margin-top: 30vh; 
+  color: rgba(218, 202, 59, 0.73);
+text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+font-family: Chicle;
+font-size: 250px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  text-align: center;
+}
+
+
 
 .header_activity p {
   font-family: "Fasthand", cursive;
@@ -68,8 +87,8 @@ h1 {
 }
 .card_activite {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 10px;
   display: flex;

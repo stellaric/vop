@@ -9,8 +9,7 @@ export default function Activity() {
     return (
         <>
        <Header/>
-       {/* <Main/> */}
-      
+        <Main/> 
        <Footer/>
    </>
     );
