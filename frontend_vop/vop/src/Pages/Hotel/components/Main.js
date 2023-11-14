@@ -62,8 +62,6 @@ export default function Main (){
             setActiveTab(categoryId);
           };
         
-          
-        
           return (
             <div className="main_vol">
               
